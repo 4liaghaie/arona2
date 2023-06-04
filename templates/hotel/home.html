@@ -1,0 +1,248 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block title %}Club Arona{% endblock %}
+{% block content %}
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="masthead">
+      <div class="social">
+      <div class="fa fa-facebook"></div>
+      <div class="fa fa-twitter"></div>
+      <div class="fa fa-instagram"></div></div>
+      <a href="#food"><img class="down-btn" src="/static/assets/img/down.png" width="50px" height="50px"></a>
+      </div>
+    <div id="reserve" class="reserve">
+      <div class="reserveui">
+        <div class="reserve-divider"><p class="reservep">Check In</p><input type="date"></div>
+        <div class="reserve-divider"><p class="reservep">Check Out</p><input type="date"></div>
+        <div class="reserve-divider"><p class="reservep">Adult</p><input type="number" value="0"  min="0" max="5"></div>
+        <div class="reserve-divideri"><p class="reservep">Child</p><input type="number" value="0" min="0" max="5"></div>
+        <button type="button" class="reserve-btn ">Reservation</button>
+      </div>
+
+    </div>
+    <section class="hakim"> 
+      <h4 class="hakimiz">HAKKIMIZDA</h4>
+      <p class="hakim-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultricies ante. Suspendisse luctus purus arcu, non accumsan sapien congue ut. Integer ut eleifend eros, ut varius nibh. Maecenas porttitor, nunc et dictum consectetur,<br><br>
+        risus orci aliquet tellus, quis euismod lorem ligula a magna. Phasellus sit amet vulputate mi. Donec pellentesque pretium turpis, 
+        ut faucibus urna dictum a. In convallis tincidunt arcu,<br> 
+        eget dignissim massa tristique in. </p>
+        <div class="video">
+          <a href="#"><img class="watch"src="/static/assets/img/watch.png"alt=""width="150px" height="60px"/></a>
+             </div>
+        <div class="rect">
+        </div>      
+    </section>
+
+    <section class="odalar">
+      <h4 class="odalarh">ODALAR</h4>
+      <div  style="--swiper-navigation-color: #707070; --swiper-pagination-color: #076984" class="swiper swiper1 mySwiper1">
+      <div class="card-container swiper-wrapper">
+        <div class="villa swiper-slide">
+          <img class="villa-img" src="/static/assets/img/lalila.jpg" width="350px" height="450px">
+          <h3 class="villah">Villa laLila </h3>
+          <div class="villa-info">
+            <p class="villap">400 ㎡</p>
+            <div class="villa-divider"></div>
+            <p class="villap">5 yatak odası  
+            </p>
+            <div class="villa-divider"></div>
+            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+          </div>
+          <button class="button-34" role="button">DETAYLI İNCELE</button>
+        </div> <div class="villa swiper-slide">
+          <img class="villa-img" src="/static/assets/img/amarila.jpg" width="350px" height="450px">
+          <h3 class="villah">Villa amarila </h3>
+          <div class="villa-info">
+            <p class="villap">400 ㎡</p>
+            <div class="villa-divider"></div>
+            <p class="villap">5 yatak odası  
+            </p>
+            <div class="villa-divider"></div>
+            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+          </div>
+          <button class="button-34" role="button">DETAYLI İNCELE</button>
+        </div>
+       <div class="villa swiper-slide"> 
+          <img class="villa-img" src="/static/assets/img/palaya.jpg" width="350px" height="450px">
+          <h3 class="villah">Villa palaya </h3>
+          <div class="villa-info"><p class="villap">400 ㎡</p>
+            <div class="villa-divider"></div>
+            <p class="villap">5 yatak odası  
+            </p>
+            <div class="villa-divider"></div>
+            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+          </div>
+          <button class="button-34" role="button">DETAYLI İNCELE</button>
+        </div>
+        <div class="villa swiper-slide">
+          <img class="villa-img" src="/static/assets/img/grand.jpg" width="350px" height="450px">
+          <h3 class="villah">VILLA THE GRAND  </h3>
+          <div class="villa-info"><p class="villap">400 ㎡</p>
+            <div class="villa-divider"></div>
+            <p class="villap">5 yatak odası  
+            </p>
+            <div class="villa-divider"></div>
+            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+          </div>
+          <button class="button-34" role="button">DETAYLI İNCELE</button>
+        </div>
+        <div class="villa swiper-slide">
+          <img class="villa-img" src="/static/assets/img/laren.jpg" width="350px" height="450px">
+          <h3 class="villah">LAREN SIGNATURE</h3>
+          <div class="villa-info">
+            <p class="villap">300 ㎡</p>
+            <div class="villa-divider"></div>
+            <p class="villap">2 yatak odası  
+            </p>
+            <div class="villa-divider"></div>
+            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+          </div>
+          <button class="button-34" role="button">DETAYLI İNCELE</button>
+        </div>
+        
+      </div>
+      <div class="swiper-button-next swiper-button-next1"></div>
+      <div class="swiper-button-prev swiper-button-prev1"></div>
+      <div class="swiper-pagination swiper-pagination1"></div>
+
+    </div>
+      <img class="video2"src="/static/assets/img/video2.png"alt=""width="100px" height="150px"/>
+    </section>
+    <section class="food" id="food">
+      <div style="--swiper-navigation-color: #FFFFFF;--swiper-pagination-color: #076984" class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+
+    <div class="food-container swiper-slide">
+      <h3 class="foodh">FrangiPani Restoran</h3>
+      <h4 class="foodc">12:00/18:00</h4>
+      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
+      </p>
+      <a href="#">  <img class="foodpic"src="/static/assets/img/food.jpg"alt=""width="860  px" height="350px"/></a>
+    </div>
+    <div class="food-container swiper-slide">
+      <h3 class="foodh">the palm restoran</h3>
+      <h4 class="foodc">07:00/22:00</h4>
+      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
+      </p>
+      <a href="#">  <img class="foodpic"src="/static/assets/img/food2.jpg"alt=""width="860  px" height="350px"/></a>
+    </div>
+    <div class="food-container swiper-slide">
+      <h3 class="foodh">private island</h3>
+      <h4 class="foodc">07:00/00:00</h4>
+      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
+      </p>
+      <a href="#"> <img class="foodpic"src="/static/assets/img/private.jpg"alt=""width="860  px" height="350px"/></a>
+    </div>
+    <div class="food-container swiper-slide">
+      <h3 class="foodh">snack bar</h3>
+      <h4 class="foodc">12:00/18:00</h4>
+      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
+      </p>
+      <a href="#"> <img class="foodpic"src="/static/assets/img/snack.jpg"alt=""width="860  px" height="350px"/></a>
+    </div>
+
+    <div class="food-container swiper-slide">
+      <h3 class="foodh">green bar</h3>
+      <h4 class="foodc">10:00/18:00</h4>
+      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
+      </p>
+      <a href="#"> <img class="foodpic"src="/static/assets/img/green.jpg"alt=""width="860  px" height="350px"/></a>
+    </div>
+    <div class="food-container swiper-slide">
+      <h3 class="foodh">chill bar</h3>
+      <h4 class="foodc">10:00/22:00</h4>
+      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
+      </p>
+      <a href="#"><img class="foodpic"src="/static/assets/img/chill.jpg"alt=""width="860  px" height="350px"/></a>
+    </div>
+    <div class="food-container swiper-slide">
+      <h3 class="foodh">frangipani roof bar</h3>
+      <h4 class="foodc">17:00/02:00</h4>
+      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
+      </p>
+      <a href="#"><img class="foodpic"src="/static/assets/img/frangipanibar.jpg"alt=""width="860  px" height="350px"/></a>
+    </div>
+    <div class="food-container swiper-slide">
+      <h3 class="foodh">aspaca bar</h3>
+      <h4 class="foodc">20:00/00:00</h4>
+      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
+      </p>
+      <a href="#"><img class="foodpic"src="/static/assets/img/aspaca.jpg"alt=""width="860  px" height="350px"/></a>
+    </div>
+    
+
+
+  </div>
+  <div class="swiper-button-next swiper-button-next2"></div>
+  <div class="swiper-button-prev swiper-button-prev2"></div>
+  <div class="swiper-pagination swiper-pagination2"></div>
+</div>
+    </section>
+    
+    <section class="konsept"><h4 class="konsepth">KONSEPTİMİZ</h4>
+    <div class="kons-container">
+      <div class="kons-left"><h2 class="konsepth2">Konsept</h2><hr class="konsepthr">
+      <p class="konseptp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
+      </p><h4 class="caveat">Laboris nisi ut aliquip ex ea commodo consequat.</h4></div>
+      <div class="kons-right">
+        <div class="konspicd">
+        <div class="konspicont"><a href="#"><img class="konspic"src="/static/assets/img/kons1.jpg"alt=""width="190px" height="213px"/></a></div>
+        <div class="konspicont"><a href="#"><img class="konspic"src="/static/assets/img/kons2.jpg"alt=""width="190px" height="213px"/></a></div>
+        <div class="konspicont"><a href="#"><img class="konspic"src="/static/assets/img/kons3.jpg"alt=""width="190px" height="213px"/></a></div>
+        </div>
+      </div>
+    </div> 
+    </section>
+    <div style="--swiper-navigation-color: #707070;" class="swiper mySwiper3">
+      <div class= " navdown">
+            <ul class="downul mx-auto">
+                <li class="downi"> <a class="down-link button6" href="#">GENEL </a></li>
+                <li class="downi"> <a class="down-link button1" href="#">HAVUZ </a></li>
+                <li class="downi"> <a class="down-link button2" href="#">VİLLA</a></li>
+                <li class="downi"> <a class="down-link button3" href="#">AKTİVİTE </a></li>
+                <li class="downi"> <a class="down-link button4" href="#">RESTORAN </a></li>
+                <li class="downi"> <a class="down-link button5" href="#">SPA</a></li>      
+      </div>
+      <!-- down slider-->
+      
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/havuz1.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/havuz2.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/havuz3.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/havuz4.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa1.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa2.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa3.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa4.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa5.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa6.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa7.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa8.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa9.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa10.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa11.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa12.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/activity.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/restoran1.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/restoran2.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/restoran3.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/spa1.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/spa2.jpg"></div>
+          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/spa3.jpg"></div>
+
+        </div>
+        <div class="swiper-button-next swiper-button-next3"></div>
+        <div class="swiper-button-prev swiper-button-prev3"></div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script src="{% static 'js/scripts.js' %} "></script>
+
+
+</body>
+
+{% endblock %}

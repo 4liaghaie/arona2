@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>{% block title %}Club Arona{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <!--fints-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cinzel&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200&family=Poppins:wght@100&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">       <link href="{%static 'css/style.css'%}" rel="stylesheet" />
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class= "navbar navbar-expand-lg navbar-light bg-white">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"> <a class="nav-link" href="#">HAKKIMIZDA </a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">VİLLALAR </a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">GURME</a></li>
+                <a href="#">          <img class="nav-logo"
+                    src="/static/assets/img/logo.png"
+                    alt=""
+                    width="320px"
+                    height="80px"
+                  />
+                </a>
+                <li class="nav-item-r"> <a class="nav-link" href="#">SPA </a></li>
+                <li class="nav-item-r"> <a class="nav-link" href="#">GALERİ </a></li>
+                <li class="nav-item-r"> <a class="nav-link" href="#">İLETİŞİM</a></li>
+                <li class="nav-item-r"><button type="button" class="nav-btn ">RESERVASYON</button></li>
+            </ul>
+            <ul class="navbar-nav"> <li class="nav-item-d dropdown">
+              <a class="nav-link dr-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                TR
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">EN</a></li>
+              </ul>
+            </li></ul>
+
+        </div>
+    </nav>
+    
+
+
+  <!-- content-->
+    <div id="content">{% block content %}{% endblock %}</div>
+<script src="{% static 'js/scripts.js' %} "></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Footer-->
+    <div class="bg-light">
+      <footer>
+        <a href="#">          <img class="footer-logo"
+          src="/static/assets/img/logo.png"
+          alt=""
+          width="320px"
+          height="80px"
+        /></a>
+      
+        <div class="footer-container">
+  <!--footernav-->
+          <div class="footer-item-left">
+            <div class="footer-nav">
+              <ul class="list-group list-group-flush">
+                <li><a class="footer-nav nav-link" href="#">Hakkımızda</a> </li>
+                <li> <a class="footer-nav nav-link">Odalar</a> </li>
+                <li> <a class="footer-nav nav-link">Gurme</a> </li>
+                <li> <a class="footer-nav nav-link">Spa</a> </li>
+                <li> <a class="footer-nav nav-link">Galeri</a> </li>
+                <li> <a class="footer-nav nav-link">İletişim</a> </li>
+              </ul>
+
+            </div>
+            <div class="footer-cont">
+              <ul class="list-group list-group-flush">
+                <li class="footer-cont"></i> <img class="icon"src="/static/assets/img/phone.png"alt=""width="20px" height="20px"/>0 242 242 42 42</li>
+                <li class="footer-cont"><img class="icon"src="/static/assets/img/pin.png"alt=""width="14px" height="21px"/>Atatürk Cd. No:104, 07500, 07500 Belek/Antalya</li>
+                <li class="footer-cont mt-3"> <img class="icon"src="/static/assets/img/youtube.png"alt=""width="30px" height="30px"/>
+                  <img class="icon"src="/static/assets/img/twitter.png"alt=""width="30px" height="30px"/>
+                  <img class="icon"src="/static/assets/img/facebook.png"alt=""width="30px" height="30px"/>
+                  <img class="icon"src="/static/assets/img/instagram.png"alt=""width="30px" height="30px"/></li>
+                <li class="footer-cont mt-4"><img class="icon"src="/static/assets/img/pdf.png"alt=""width="40px" height="40px"/><strong>E- KATALOG</strong> DOSYASI İNDİR </li>
+                <li class="footer-cont">mail: info@clubarona.com</li>
+              </ul>
+            </div>
+          
+          </div>
+
+
+<!-- googlemap-->
+          <div class="footer-item-right">
+            <div class="gmap ratio ratio-16x9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6570.081970847047!2d31.00869525323411!3d36.87785078383357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c37b62cb60827f%3A0xd504e8af7d613a38!2sThe%20Land%20of%20Legends%20Shopping%20Avenue!5e0!3m2!1sfa!2sno!4v1685481569755!5m2!1sfa!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </div>
+          </div>
+        </div>
+        <hr class="divider" />
+        <pre class=" prefoot">Gizlilik İlkeleri     Kurallar ve Yönetmelikler     K.V.KK </pre>
+        <hr class="divider" />
+        <h3 class="pwrd">POWERED BY</h3>
+        <a href="#">          <img class="footer-logo"
+          src="/static/assets/img/prego.png"
+          alt=""
+          width="150px"
+          height="60px"
+        />
+        </a>
+        <pre class=" mt-3 prefoot">© 2023 ALL RIGHTS RESERVED</pre>
+         
+          
+   </footer>
+  
+
+ </div>  
+</body>
+</html>
+
+  
