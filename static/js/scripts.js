@@ -1,5 +1,6 @@
 var swiper1 = new Swiper(".mySwiper1", {
-    slidesPerView: 3,
+    
+    slidesPerView: 2,
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination1",
@@ -9,6 +10,12 @@ var swiper1 = new Swiper(".mySwiper1", {
         nextEl: ".swiper-button-next1",
         prevEl: ".swiper-button-prev1",
       },
+      breakpoints: {
+        800: {
+       
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },},
     });
 
     var swiper2 = new Swiper(".mySwiper2", {
@@ -69,6 +76,9 @@ var swiper1 = new Swiper(".mySwiper1", {
           e.preventDefault();
           swiper3.slideTo(1, 0);
         });
+
+
+        
         
 
 

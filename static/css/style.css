@@ -18,13 +18,30 @@
   }
 
 
-    .nav-item-d{
+  .nav-item-d{
 float: right;}
 
 .nav-logo{
     margin-left: 100px;
     margin-right: 100px;
 }
+@media only screen and (max-width: 992px) {
+  .nav-logo{
+  display: none;  
+  }
+}
+.nav-logo-mobile{
+  display: none;
+}
+@media only screen and (max-width: 992px) {
+  .nav-logo-mobile{
+    display: block;
+    margin-top:-40px;
+  margin-left: 50px; 
+  }}
+
+
+
 .nav-btn{
     padding: 6px 16px;
     background-color: white;
@@ -34,6 +51,7 @@ float: right;}
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 }
+
  div.masthead{
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
@@ -43,25 +61,71 @@ float: right;}
     background-size: cover;
     height: 769px;
     width: 100%;
-
-
-
  }
+ @media only screen and (max-width: 736px) {
+  div.masthead{
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background:linear-gradient(180deg, rgba(0,0,0,0.34226190476190477) 0%, rgba(255,255,255,0) 54%) ,linear-gradient(0deg, rgba(0,0,0,0.34226190476190477) 0%, rgba(255,255,255,0) 54%),  url("../assets/img/mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 769px;
+    width: 100%;
+  }}
+ 
  .footer-logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
  }
+ .footer-logo1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ @media only screen and (max-width: 736px) {
+  .footer-logo{
+    display: none;
+  }}
+
  .footer-container{
     display: flex;
     flex-direction: row;
  }
+ @media only screen and (max-width: 736px) {
+  .footer-container{
+    flex-direction: column-reverse;
+  }}
  .footer-item-left {
     padding: 10px;
     flex: 60%;
     display: flex;
     flex-direction: row;
   }
+  @media only screen and (max-width: 736px) {
+    .footer-item-left{
+      flex-direction: column-reverse;
+
+    }}
+    @media only screen and (max-width: 736px) {
+      .catalog{
+        display: none;
+      }}
+      .catalog-mobile{
+        display: none;
+        margin-left: auto;
+        margin-right: auto;}
+
+      @media only screen and (max-width: 736px) {
+        .catalog-mobile{
+          display: block;
+          margin-left: 50px;
+          color: #909090;
+          margin-bottom: 20px;
+
+        }}
+
   .footer-nav{
     flex: 30%;
 
@@ -86,6 +150,11 @@ float: right;}
     margin-left: 15px;
     
   }
+  @media only screen and (max-width: 736px) {
+    .watch{
+      margin-top:10px;
+
+    }}
   li.footer-cont{
     margin: 10px;
     font-family: 'Avenir', sans-serif;
@@ -111,6 +180,11 @@ float: right;}
     float: right;
     -moz-border-radius: 40px;margin:0 auto;overflow:hidden;
   }
+  @media only screen and (max-width: 736px) {
+    .gmap{
+     margin-top: 90px;
+     margin-bottom: 10px;
+    }}
   hr.divider {
     height: 0.1rem;
     max-width: 9.25rem;
@@ -119,6 +193,25 @@ float: right;}
     background-color:#dbdbdb;
     opacity: 1;
   }
+  hr.divider-mobile {
+    height: 0.1rem;
+    max-width: 9.25rem;
+    margin: auto;
+    color: #dcdcdc;
+    background-color:#dbdbdb;
+    opacity: 0;
+
+
+  }
+  @media only screen and (max-width: 736px) {
+    hr.divider-mobile {
+      height: 0.1rem;
+      max-width: 9.25rem;
+      margin: auto;
+      color: #dcdcdc;
+      background-color:#dbdbdb;
+      opacity: 1;
+      }}
 
 pre.prefoot{
   color: #909090;
@@ -164,6 +257,13 @@ p.copyr{
   height: 150px;
   background-color: #076984;
 }
+
+@media only screen and (max-width: 736px) {
+  .reserve{
+    display: none;
+  }
+}
+
 .reserveui{
 
   height: 60px;
@@ -247,16 +347,36 @@ p.hakim-txt{
   font-family: "avenir";
   font-size: 12px;
 }
+@media only screen and (max-width: 736px) {
+  p.hakim-txt{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "avenir";
+    font-size: 12px;
+  }}
+
 .rect{
   height: 90px;
-  width: 650px;
+  width: 44%;
   border: 1px solid #707070;
   position: relative;
   top: 15px;
-  left: 420px;
+  left: 28%;
   z-index: 10;
 
 }
+
+@media only screen and (max-width: 736px) {
+  .rect{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    top: 30px;
+    height: 80px;
+
+  }}
+
 .video{
   background:  url("../assets/img/video.jpg");
   background-size: cover;
@@ -264,8 +384,18 @@ p.hakim-txt{
   top: 70px;
   left: 31.5%;
   z-index: 20;
-  width: 550px;
+  width: 35%;
   height: 125px;
+}
+@media only screen and (max-width: 736px) {
+  .video{
+    position: relative;
+    top: 90px;
+    left: 20%;
+    width: 60%;
+    height: auto;
+
+  }
 }
 
 .odalar{
@@ -276,6 +406,12 @@ p.hakim-txt{
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media only screen and (max-width: 736px) {
+  .odalar{
+    height:  100%;
+    width: 100%;
+  }}
+
 h4.odalarh{
   font-family: "poppins";
   text-align: center;
@@ -330,6 +466,20 @@ h4.odalarh{
   background-position: center;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 736px) {
+  .konsept{
+    height: 100%;
+    background:  url("../assets/img/mask3mobile.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    background-position: bottom;
+   
+    
+  
+
+  }}
+
 .konsepth{
   font-family: "poppins";
   text-align: center;
@@ -354,6 +504,12 @@ h4.odalarh{
   display: flex ;
   flex-direction: row;
 }
+@media only screen and (max-width: 736px) {
+  .kons-container{
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+  }}
 .kons-left{
 flex: 40%;
 }
@@ -377,23 +533,50 @@ flex: 60%;
   
   
 }
+@media only screen and (max-width: 736px) {
+  .villa{
+    flex: 40%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    height: auto;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    border-radius: 28px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+  }}
+
+  
 .villa-img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-radius: 28px;
-
+  width: 72%;
 }
+
+@media only screen and (max-width: 736px) {
+  .villa-img{
+width: 100%;
+height: auto;
+
+  }}
 .villah{
   text-align: center;
   color: #076984;
   margin-top: 20px;
   font-family: 'Cinzel', serif;
 }
+@media only screen and (max-width: 736px) {
+  .villah{
+    font-size: 16px;
+
+  }}
+
 .villa-info{
   display: flex;
   flex-direction: row;
-  width: 370px;
+  width: 75%;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -402,6 +585,13 @@ flex: 60%;
   border-radius: 20px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
+@media only screen and (max-width: 736px) {
+  .villa-info{
+    height: auto;
+    flex-direction: column;
+    box-shadow: none;
+
+  }}
 
 .button-34 {
   background: #076984;
@@ -425,6 +615,30 @@ flex: 60%;
   border: 0;
   margin-top: 15px;
 }
+@media only screen and (max-width: 736px) {
+  .button-34{
+    background: #076984;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "poppins"sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 4px 30px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+  }}
 .villap{
   font-family: "poppins"sans-serif;
   font-size: 12px;
@@ -433,18 +647,49 @@ flex: 60%;
   margin-right: 16px;
 
 }
+@media only screen and (max-width: 736px) {
+  .villap{
+    padding-top: 0px;
+    font-size: 10px;
+
+  }}
 .villa-divider{
 
   margin-top: 10px;
   height: 50%;
   border-left: 1px solid #D1C9C9;
 }
+@media only screen and (max-width: 736px) {
+  .villa-divider{
+    display: none;
+
+  }}
+  @media only screen and (max-width: 736px) {
+    .swiper-pagination1{
+      display: none;
+    
+
+    }}
 .video2{
   position: relative;
   top: -20px;
   left: 47%;
 
 }
+@media only screen and (max-width: 736px) {
+  .video2{
+    position: relative;
+    top: 80px;
+    left: 45%;
+
+    }}
+    @media only screen and (max-width: 650px) {
+      .video2{
+        position: relative;
+        top: 80px;
+        left: 42%;
+    
+        }}
 .caveat{
   font-family: "Caveat";
   font-size: 28px;
@@ -463,12 +708,25 @@ flex: 60%;
   margin-top: 120px;
   margin-left: 20px;
 }
+@media only screen and (max-width: 736px) {
+  .konspic{
+  width: 90%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  }}
+
 
 .konspicd{
   display: flex;
-
   margin-left: 80px;
 }
+@media only screen and (max-width: 736px) {
+  .konspicd{
+    margin-left: 5%;
+  }}
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -506,12 +764,22 @@ flex: 60%;
   margin-left: 60px;
   
 }
+@media only screen and (max-width: 736px) {
+  .downi{
+  margin-left: 27px; 
+
+  }}
 .down-link{
   color: #ffffff;
   font-family: "poppins";
   font-weight: bold;
   font-size: 14px;
 }
+@media only screen and (max-width: 736px) {
+  .down-link{
+  font-size: 10px; 
+
+  }}
 .down-link:hover{
   color: #e8e8e8;
 }
@@ -582,6 +850,13 @@ body {
   height: 75%;
 }
 
+@media only screen and (max-width: 736px) { 
+  .swiper1{
+    height: 100%;
+
+  }}
+
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -594,6 +869,16 @@ body {
   height: 100%;
   width: 100%;
 }
+@media only screen and (max-width: 736px) {
+  .downimg{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }}
+
+
+
 
 
 
