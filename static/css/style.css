@@ -1,17 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cinzel&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200&family=Poppins:wght@100&family=Roboto:wght@100;300;400&display=swap');
 .nav-item{
-    margin-top: 18px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 28px;
+    margin-left: 28px;
+    margin-right: 18px;
     font-size: 0.9pc;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 }
 .nav-item-r{
     margin-top: 18px;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-left: 15px;
+    margin-right: 15px;
     font-size: 0.9pc;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
@@ -22,8 +22,9 @@
 float: right;}
 
 .nav-logo{
-    margin-left: 100px;
-    margin-right: 100px;
+  position: relative;
+left: 30%;
+margin-right: 200px;
 }
 @media only screen and (max-width: 992px) {
   .nav-logo{
@@ -37,7 +38,7 @@ float: right;}
   .nav-logo-mobile{
     display: block;
     margin-top:-40px;
-  margin-left: 50px; 
+  margin-left: 35%; 
   }}
 
 
@@ -51,6 +52,19 @@ float: right;}
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 }
+.toggler{
+  margin-top: 15px;
+}
+.lang-mobile{
+display: none;
+}
+@media only screen and (max-width: 992px) {
+.lang-mobile{
+  position: relative;
+  top: -20px;
+  display: block;
+
+  }}
 
  div.masthead{
     padding-top: 10rem;
@@ -70,7 +84,7 @@ float: right;}
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 769px;
+    height: 550px;
     width: 100%;
   }}
  
@@ -120,7 +134,8 @@ float: right;}
       @media only screen and (max-width: 736px) {
         .catalog-mobile{
           display: block;
-          margin-left: 50px;
+          margin-left: 20%;
+          margin-right: auto;
           color: #909090;
           margin-bottom: 20px;
 
@@ -311,6 +326,23 @@ input[type="date"]{
   border-radius: 5px;
   margin-left: 10px;
 }
+@media only screen and (max-width: 736px) {
+  input[type="date"]{
+    background-color: #ffffff;
+    border: 2px solid #005981;
+    color: #005981;
+    margin: auto;
+    border-radius: 28px;
+    width: 80%;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 10%;
+
+
+
+  }}
+
 input[type="number"]{
   background-color: #076984; 
   font-family: "Nunito Sans",monospace;
@@ -321,7 +353,21 @@ input[type="number"]{
   border-radius: 5px;
   margin-left: 50px;
 }
+@media only screen and (max-width: 736px) {
+  input[type="number"]{
+    background-color: #ffffff;
+    border: 2px solid #005981;
+    color: #005981;
+    margin: auto;
+    border-radius: 28px;
+    width: 120px;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
 
+  }}
 
 .hakim{
   background:  url("../assets/img/mask1.jpg");
@@ -340,6 +386,10 @@ h4.hakimiz{
   font-weight:600;
   color: #707070;
 }
+@media only screen and (max-width: 736px) {
+h4.hakimiz{
+  padding-top: 20px;
+}}
 p.hakim-txt{
   text-align: center;
   margin-left: 25%;
@@ -370,12 +420,22 @@ p.hakim-txt{
 @media only screen and (max-width: 736px) {
   .rect{
     position: relative;
-    left: 15%;
-    width: 70%;
-    top: 30px;
-    height: 80px;
+    left: 5%;
+    width: 90%;
+    top: 90px;
+    height: 70px;
 
   }}
+  @media only screen and (max-width: 440px) {
+    .rect{
+      position: relative;
+      left: 5%;
+      width: 90%;
+      top: 60px;
+      height: 70px;
+  
+    }}
+  
 
 .video{
   background:  url("../assets/img/video.jpg");
@@ -387,12 +447,22 @@ p.hakim-txt{
   width: 35%;
   height: 125px;
 }
-@media only screen and (max-width: 736px) {
+@media only screen and (max-width: 440px) {
   .video{
     position: relative;
-    top: 90px;
-    left: 20%;
-    width: 60%;
+    top: -190px;
+    left: 12%;
+    width: 76%;
+    height: auto;
+
+  }
+}
+@media only screen and ( max-width: 736px), (min-width:441px){
+  .video{
+    position: relative;
+    top: 140px;
+    left: 12%;
+    width: 76%;
     height: auto;
 
   }
@@ -421,6 +491,11 @@ h4.odalarh{
   font-weight:600;
   color: #707070;
 }
+@media only screen and (max-width: 736px) {
+  h4.odalarh{
+    padding-top: 60px;
+
+  }}
 
 .food{
   height: 420px;
@@ -496,6 +571,11 @@ h4.odalarh{
   color: rgb(0, 0, 0);
   font-family: 'Cinzel', serif;
 }
+@media only screen and (max-width: 736px) {
+.konsepth2{
+  margin-left: 20px;
+
+}}
 .kons-container{
   margin-left: auto;
   margin-right: auto;
@@ -503,6 +583,7 @@ h4.odalarh{
   height: 400px;
   display: flex ;
   flex-direction: row;
+
 }
 @media only screen and (max-width: 736px) {
   .kons-container{
@@ -523,12 +604,17 @@ flex: 60%;
 }
 .card-container{
 
+
   display: flex ;
   flex-direction: row;
+
 }
 
 .villa{
+
+
   flex: 32%;
+
 
   
   
@@ -538,10 +624,11 @@ flex: 60%;
     flex: 40%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
+
     height: auto;
     background-color: #FFFFFF;
-    margin-top: 20px;
+
     border-radius: 28px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
   }}
@@ -551,8 +638,9 @@ flex: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   border-radius: 28px;
-  width: 72%;
+  width: 90%;
 }
 
 @media only screen and (max-width: 736px) {
@@ -569,14 +657,15 @@ height: auto;
 }
 @media only screen and (max-width: 736px) {
   .villah{
-    font-size: 16px;
+    font-size: 15px;
+    margin-top: 5px;
 
   }}
 
 .villa-info{
   display: flex;
   flex-direction: row;
-  width: 75%;
+  width: 90%;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -635,22 +724,49 @@ height: auto;
     width: fit-content;
     word-break: break-word;
     border: 0;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-bottom: 10px;
 
   }}
+  @media only screen and (max-width: 736px) {
+    .button-33{
+      background: #076984;
+      border-radius: 999px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-family: "poppins"sans-serif;
+      font-size: 7px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      padding: 4px 30px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: fit-content;
+      word-break: break-word;
+      border: 0;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      margin-left:32%;
+
+    }}
 .villap{
   font-family: "poppins"sans-serif;
   font-size: 12px;
-  margin-left: 25px;
+  margin-left: 10px;
   padding-top: 10px;
   margin-right: 16px;
 
 }
 @media only screen and (max-width: 736px) {
   .villap{
-    padding-top: 0px;
+    margin-top: -25px;
     font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
 
   }}
 .villa-divider{
@@ -683,7 +799,7 @@ height: auto;
     left: 45%;
 
     }}
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 736px) {
       .video2{
         position: relative;
         top: 80px;
@@ -695,15 +811,31 @@ height: auto;
   font-size: 28px;
 
 }
+@media only screen and (max-width: 736px) {
+  .caveat{
+    font-size: 20px;
+    margin-left: 16px;
+    margin-bottom: 20px;
+
+  }}
 .konseptp{
   font-family: "roboto"sans-serif;
   font-size: 13px;
 }
+@media only screen and (max-width: 736px) {
+  .konseptp{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "roboto"sans-serif;
+    font-size: 11px;}}
 .konsepthr {
   border-top: 2px solid #C9A26F;
   width: 80px;
   border-radius: 5px;}
 
+  @media only screen and (max-width: 736px) {
+    .konsepthr {
+      margin-left: 20px;}}
 .konspic{
   margin-top: 120px;
   margin-left: 20px;
@@ -757,16 +889,21 @@ height: auto;
 .downul{
   text-align: center;
   padding-top: 30px;
-
+  margin-left: auto; 
+  margin-right: auto;
 }
 .downi{
+  margin-left: 38px;
+    margin-right: 38px;
   display: inline;
-  margin-left: 60px;
+ 
   
 }
 @media only screen and (max-width: 736px) {
   .downi{
-  margin-left: 27px; 
+    margin-left: 8px;
+    margin-right: 8px;
+
 
   }}
 .down-link{
@@ -793,6 +930,13 @@ height: auto;
   margin-right: auto;
   margin-top: 50px;
 }
+@media only screen and (max-width: 736px) {
+  .down-btn{
+    margin-top: 280px;
+
+  }}
+
+
 .dr-down{
   font-family: Arial, Helvetica, sans-serif ;
 }
@@ -809,6 +953,36 @@ height: auto;
   border-radius: 80%;
   opacity: 0.7;
 }
+.fa1 {
+  padding-top: 5px;
+  margin-bottom: 10px;
+  font-size: 39px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 80%;
+  opacity:1;
+}
+
+
+@media only screen and (max-width: 736px) { 
+  .fa {
+    display: none;
+
+
+  }}
+
+@media only screen and (max-width: 736px) { 
+  .fa1{
+    color: #4a4a4a;
+    margin-left: 15px;
+
+
+
+  }}
 
 
 .fa:hover {
@@ -830,6 +1004,13 @@ height: auto;
 
 
 }
+@media only screen and (max-width: 736px) { 
+  .social{
+    display: none;
+
+
+  }}
+
 html,
 body {
   position: relative;
@@ -846,13 +1027,15 @@ body {
 }
 
 .swiper1 {
-  width: 100%;
+  width: 75%;
   height: 75%;
+  position: fixed;
 }
 
 @media only screen and (max-width: 736px) { 
   .swiper1{
     height: 100%;
+    width: 100%;
 
   }}
 
@@ -877,8 +1060,167 @@ body {
     object-position: center;
   }}
 
+  .swiper-button-next2{
+    position: relative;
+    right: 17%;
+    top: -180px;
 
+  }
+  .swiper-button-prev2{
+    position: relative;
+    left: 18%;
+    top: -180px;
 
+  }
+  .next{
+    height: 40px;
+    width: 40px;
+  }
+  @media only screen and (max-width: 736px) {
+    .swiper-button-next2{
+      position: relative;
+      right: 3%;
+      top: -180px;
+  
+    }}
+    @media only screen and (max-width: 736px) {
+      .swiper-button-prev2{
+        position: relative;
+        left: 8%;
+        top: -180px;
+    
+      }}
+      @media only screen and (max-width: 736px) {
+  .next{
+    height: 30px;
+    width: 30px;
+}}
+
+.swiper-button-next1{
+  position: relative;
+  right: -1%;
+  top:-450px;
+ 
+
+}
+.swiper-button-prev1{
+  position: relative;
+  left: 0%;
+  top:-450px;
+ 
+
+}
+@media only screen and (max-width: 736px) {
+  .swiper-button-next1{
+    display: none;}}
+@media only screen and (max-width: 736px) {
+    .swiper-button-prev1{
+       display: none;}}
+
+    
+.swiper-pagination-bullet {
+          margin: 0 4px;
+        }
+.swiper-button-next3{
+  position: relative;
+  right: 5%;
+  top:-280px;
+ 
+
+}
+.swiper-button-prev3{
+  position: relative;
+  left: 9%;
+  top:-280px;
+ 
+
+}
+
+.mobile-menu{
+  display: none;
+  width: 100%;
+  height: 660px;
+}
+
+.menu-logo{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 25px;
+
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 0%;
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255); /* Black fallback color */
+  background-color: rgba(255, 255, 255,); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+  color: #000000;
+}
+
+.mobile-check{
+
+  margin-top: 30px;
+}
+
+.checkp{
+  text-align: center;
+  color: #005981;
+  font-family:"Nunito Sans"sans-serif ;
+}
+
+.numb-cont{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+  text-align: center;
+  
+}
+.numb-cont-item{
+  flex: 50%;
+  border: 1px solid red;
+
+}
+.numbp{
+  margin-right: 30px;
+  margin-left: 30px;
+  color: #005981;
+  font-family:"Nunito Sans"sans-serif ; 
+
+}
+.mobile-nav{
+margin-top: 40px;
+margin-left:1%;
+margin-right: 1%;
+}
+.nav-mobile-li{
+  display: inline;
+  margin-left: 6px;
+  margin-right: 6px;
+  font-size: 14px;
+}
+.menu-social{
+  margin-top: 30px;
+  margin-left: 30%;
+}
 
 
 

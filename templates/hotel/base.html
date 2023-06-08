@@ -40,17 +40,55 @@ rel="stylesheet"
   </head>
   <body>
     <!-- Navigation-->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        
+      <img class="menu-logo"src="/static/assets/img/logo.png"alt="" width="240px" height="60px" />
+      <div class="mobile-check">
+      <p class="checkp">Giriş Tarihi</p>
+      <span class="datepicker-toggle">
+      <input type="date"></div>
+      <div class="mobile-check"><p class="checkp"> Çıkış Tarihi</p>
+      <input type="date"></div>
+      <div class="numb-cont">
+        <div class"numb-cont-item">
+      <p class="numbp">Kişi Sayısı</p>
+      <input type="number" value="0"  min="0" max="10">
+        </div>
+        <div class"numb-cont-item">
+      <p class="numbp">Çocuk Sayısı</p>
+      <input type="number" value="0"  min="0" max="10"></div>
+      </div>
+      <button class="button-33" role="button">REZERVASYON YAP</button>
+      
+      
+       </div>
+       <ul class="mobile-nav">
+        <li class="nav-mobile-li">GENEL</li>
+        <li class="nav-mobile-li">VİLLALAR</li>
+        <li class="nav-mobile-li">GURME</li>
+       <li class="nav-mobile-li">SPA</li>
+       <li class="nav-mobile-li">AKTİVİTE</li>
+       </ul>
+       <div class="menu-social">
+       <div class="fa fa1 fa-facebook"></div>
+      <div class="fa fa1 fa-twitter"></div>
+      <div class="fa fa1 fa-instagram"></div>
+       </div>
+    </div>
    
     <nav class= "navbar navbar-expand-lg navbar-light bg-white">
       <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"> <img
-          src="/static/assets/img/nav icon.png"
+      <button class="navbar-toggler" onclick="openNav()">
+       <img class="toggler"
+          src="/static/assets/img/navicon.png"
           alt=""
           width="52px"
           height="21px"
-        /></span>
+        />
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"> <a class="nav-link" href="#">HAKKIMIZDA </a></li>
@@ -67,13 +105,13 @@ rel="stylesheet"
                 <li class="nav-item-r"> <a class="nav-link" href="#">GALERİ </a></li>
                 <li class="nav-item-r"> <a class="nav-link" href="#">İLETİŞİM</a></li>
                 <li class="nav-item-r"><button type="button" class="nav-btn ">RESERVASYON</button></li>
-            </ul>
-            <ul class="navbar-nav"> <li class="nav-item-d dropdown">
+            
+                <li class="nav-item-r dropdown">
               <a class="nav-link dr-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 TR
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">EN</a></li>
+                <li><a class="dropdown-item nav-link" href="#">EN</a></li>
               </ul>
             </li></ul>
           </div>
@@ -81,9 +119,15 @@ rel="stylesheet"
         <a href="#">          <img class="nav-logo-mobile"
           src="/static/assets/img/logo.png"
           alt=""
-          width="320px"
-          height="80px"
+          width="240px"
+          height="60px"
         />
+        <div class="nav-item-d dropdown lang-mobile">
+          <a class="nav-link dr-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            TR
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">EN</a></li>
     </nav>
     
 
