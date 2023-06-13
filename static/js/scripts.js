@@ -51,46 +51,17 @@ var swiper1 = new Swiper(".mySwiper1", {
           nextEl: ".swiper-button-next3",
           prevEl: ".swiper-button-prev3",
         },
-        
-    
-        });
-        document
-        .querySelector('.button1')
-        .addEventListener('click', function (e) {
-          e.preventDefault();
-          swiper3.slideTo(0, 0);
         });
 
-        document
-        .querySelector('.button2')
-        .addEventListener('click', function (e) {
-          e.preventDefault();
-          swiper3.slideTo(4, 0);
-        });
-        document
-        .querySelector('.button3')
-        .addEventListener('click', function (e) {
-          e.preventDefault();
-          swiper3.slideTo(16, 0);
-        });
-        document
-        .querySelector('.button4')
-        .addEventListener('click', function (e) {
-          e.preventDefault();
-          swiper3.slideTo(17, 0);
-        });
-        document
-        .querySelector('.button5')
-        .addEventListener('click', function (e) {
-          e.preventDefault();
-          swiper3.slideTo(20, 0);
-        });
-        document
-        .querySelector('.button6')
-        .addEventListener('click', function (e) {
-          e.preventDefault();
-          swiper3.slideTo(1, 0);
-        });
+        var swiper4 = new Swiper(".mySwiper4", {
+          navigation: {
+            nextEl: ".swiper-button-next4",
+            prevEl: ".swiper-button-prev4",
+          },
+          });
+  
+
+
 
         function openNav() {
           document.getElementById("myNav").style.width = "100%";
@@ -100,10 +71,31 @@ var swiper1 = new Swiper(".mySwiper1", {
         function closeNav() {
           document.getElementById("myNav").style.width = "0%";
         }
+        var btnContainer = document.getElementById("navdown");
 
-
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("down-link");
         
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        window.onload = function(){
+          const links = document.querySelectorAll('.down-link');
+          const divs = document.querySelectorAll('.gallery');
         
+          const hide = function(evt){
+            divs.forEach(function(d){
+               if(evt.target.getAttribute('itemNo') != d.getAttribute('itemNo')) d.classList.add('display-none');
+               else d.classList.remove('display-none');
+            });
+          }
+        
+          links.forEach(function(d){ d.onclick = hide; })
+        }
 
-
-
+       

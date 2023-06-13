@@ -17,7 +17,7 @@
       <div class="reserveui">
         <div class="reserve-divider"><p class="reservep">Check In</p><input type="date"></div>
         <div class="reserve-divider"><p class="reservep">Check Out</p><input type="date"></div>
-        <div class="reserve-divider"><p class="reservep">Adult</p>  </div>
+        <div class="reserve-divider"><p class="reservep">Adult</p><input type="number" value="0" min="0" max="10">  </div>
         <div class="reserve-divideri"><p class="reservep">Child</p><input type="number" value="0" min="0" max="10"></div>
         <button type="button" class="reserve-btn ">Reservation</button>
       </div>
@@ -38,72 +38,29 @@
 
     <section class="odalar">
       <h4 class="odalarh">ODALAR</h4>
+      
       <div  style="--swiper-navigation-color: #70707000; --swiper-pagination-color: #076984" class="swiper swiper1 mySwiper1">
-      <div class="card-container swiper-wrapper">
-        <div class="villa swiper-slide">
-          <img class="villa-img" src="/static/assets/img/lalila.jpg">
-          <h3 class="villah">VILLA LALILA</h3>
-          <div class="villa-info">
-            <p class="villap">400 ㎡</p>
-            <div class="villa-divider"></div>
-            <p class="villap">5 yatak odası  
-            </p>
-            <div class="villa-divider"></div>
-            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
-          </div>
-          <button class="button-34" role="button">DETAYLI İNCELE</button>
-        </div> <div class="villa swiper-slide">
-          <img class="villa-img" src="/static/assets/img/amarila.jpg">
-          <h3 class="villah">VILLA AMARILA</h3>
-          <div class="villa-info">
-            <p class="villap">400 ㎡</p>
-            <div class="villa-divider"></div>
-            <p class="villap">5 yatak odası  
-            </p>
-            <div class="villa-divider"></div>
-            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
-          </div>
-          <button class="button-34" role="button">DETAYLI İNCELE</button>
-        </div>
-       <div class="villa swiper-slide"> 
-          <img class="villa-img" src="/static/assets/img/palaya.jpg" >
-          <h3 class="villah">VILLA PALAYA</h3>
-          <div class="villa-info"><p class="villap">400 ㎡</p>
-            <div class="villa-divider"></div>
-            <p class="villap">5 yatak odası  
-            </p>
-            <div class="villa-divider"></div>
-            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
-          </div>
-          <button class="button-34" role="button">DETAYLI İNCELE</button>
-        </div>
-        <div class="villa swiper-slide">
-          <img class="villa-img" src="/static/assets/img/grand.jpg" >
-          <h3 class="villah">VILLA THE GRAND  </h3>
-          <div class="villa-info"><p class="villap">400 ㎡</p>
-            <div class="villa-divider"></div>
-            <p class="villap">5 yatak odası  
-            </p>
-            <div class="villa-divider"></div>
-            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
-          </div>
-          <button class="button-34" role="button">DETAYLI İNCELE</button>
-        </div>
-        <div class="villa swiper-slide">
-          <img class="villa-img" src="/static/assets/img/laren.jpg">
-          <h3 class="villah">LAREN SIGNATURE</h3>
-          <div class="villa-info">
-            <p class="villap">300 ㎡</p>
-            <div class="villa-divider"></div>
-            <p class="villap">2 yatak odası  
-            </p>
-            <div class="villa-divider"></div>
-            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
-          </div>
-          <button class="button-34" role="button">DETAYLI İNCELE</button>
-        </div>
         
-      </div>
+      <div class="card-container swiper-wrapper">
+        {% for vla in villas %}
+        <div class="villa swiper-slide">
+          
+          <img class="villa-img" src="{{vla.get_image_url}}">
+          <h3 class="villah">{{vla.name}}</h3>
+          <div class="villa-info">
+            <p class="villap">{{vla.metr}} ㎡</p>
+            <div class="villa-divider"></div>
+            <p class="villap">5 yatak odası  
+            </p>
+            <div class="villa-divider"></div>
+            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+          </div>
+          <button class="button-34" role="button">DETAYLI İNCELE</button>
+        
+
+      </div>  
+        {% endfor %}
+    </div>
   
       <div class=" swiper-button-next1"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
       <div class=" swiper-button-prev1"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
@@ -117,66 +74,17 @@
       <div style="--swiper-navigation-color: #eeeeee00; --swiper-pagination-color: #f7f7f7" class="swiper mySwiper2">
         <div class="swiper-wrapper">
 
-    <div class="food-container swiper-slide" data-hash="slide1">
-      <h3 class="foodh">FrangiPani Restoran</h3>
-      <h4 class="foodc">12:00/18:00</h4>
-      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
-      </p>
-      <a href="#">  <img class="foodpic"src="/static/assets/img/food.jpg"alt=""width="860  px" height="350px"/></a>
-    </div>
-    <div class="food-container swiper-slide" data-hash="slide2">
-      <h3 class="foodh">the palm restoran</h3>
-      <h4 class="foodc">07:00/22:00</h4>
-      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
-      </p>
-      <a href="#">  <img class="foodpic"src="/static/assets/img/food2.jpg"alt=""width="860  px" height="350px"/></a>
-    </div>
-    <div class="food-container swiper-slide" data-hash="slide3">
-      <h3 class="foodh">private island</h3>
-      <h4 class="foodc">07:00/00:00</h4>
-      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
-      </p>
-      <a href="#"> <img class="foodpic"src="/static/assets/img/private.jpg"alt=""width="860  px" height="350px"/></a>
-    </div>
-    <div class="food-container swiper-slide" data-hash="slide4">
-      <h3 class="foodh">snack bar</h3>
-      <h4 class="foodc">12:00/18:00</h4>
-      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
-      </p>
-      <a href="#"> <img class="foodpic"src="/static/assets/img/snack.jpg"alt=""width="860  px" height="350px"/></a>
-    </div>
+          {% for food in foods %}
 
-    <div class="food-container swiper-slide" data-hash="slide5">
-      <h3 class="foodh">green bar</h3>
-      <h4 class="foodc">10:00/18:00</h4>
-      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
+    <div class="food-container swiper-slide" >
+      <h3 class="foodh">{{food.name}}</h3>
+      <h4 class="foodc">{{food.hours}}</h4>
+      <p class="foodp">{{ food.info }}
       </p>
-      <a href="#"> <img class="foodpic"src="/static/assets/img/green.jpg"alt=""width="860  px" height="350px"/></a>
+      <a href="#">  <img class="foodpic"src="{{food.food_image_url}}"alt=""width="860  px" height="350px"/></a>
     </div>
-    <div class="food-container swiper-slide" data-hash="slide6">
-      <h3 class="foodh">chill bar</h3>
-      <h4 class="foodc">10:00/22:00</h4>
-      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
-      </p>
-      <a href="#"><img class="foodpic"src="/static/assets/img/chill.jpg"alt=""width="860  px" height="350px"/></a>
-    </div>
-    <div class="food-container swiper-slide" data-hash="slide7">
-      <h3 class="foodh">frangipani roof bar</h3>
-      <h4 class="foodc">17:00/02:00</h4>
-      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
-      </p>
-      <a href="#"><img class="foodpic"src="/static/assets/img/frangipanibar.jpg"alt=""width="860  px" height="350px"/></a>
-    </div>
-    <div class="food-container swiper-slide" data-hash="slide8">
-      <h3 class="foodh">aspaca bar</h3>
-      <h4 class="foodc">20:00/00:00</h4>
-      <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
-      </p>
-      <a href="#"><img class="foodpic"src="/static/assets/img/aspaca.jpg"alt=""width="860  px" height="350px"/></a>
-    </div>
+    {% endfor %}
     
-
-
   </div>
   <div class=" swiper-button-next2"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
   <div class=" swiper-button-prev2"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
@@ -201,49 +109,96 @@
       </div>
     </div> 
     </section>
-    <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
-      <div class= " navdown">
-            <ul class="downul mx-auto">
-                <li class="downi"> <a class="down-link button6" href="#">GENEL </a></li>
-                <li class="downi"> <a class="down-link button1" href="#">HAVUZ </a></li>
-                <li class="downi"> <a class="down-link button2" href="#">VİLLA</a></li>
-                <li class="downi"> <a class="down-link button3" href="#">AKTİVİTE </a></li>
-                <li class="downi"> <a class="down-link button4" href="#">RESTORAN </a></li>
-                <li class="downi"> <a class="down-link button5" href="#">SPA</a></li>      
+    
+      <div class= "navdown" >
+            <ul class="downul mx-auto" id="navdown">
+                <li class="downi"> <a class="down-link genel active" itemNo="1" href="javascript:;">GENEL </a></li>
+                <li class="downi"> <a class="down-link" itemNo="2" href="javascript:;">HAVUZ </a></li>
+                <li class="downi"> <a class="down-link " itemNo="3" href="javascript:;">VİLLA</a></li>
+                <li class="downi"> <a class="down-link " itemNo="4"  href="javascript:;">AKTİVİTE </a></li>
+                <li class="downi"> <a class="down-link " itemNo="5"  href="javascript:;">RESTORAN </a></li>
+                <li class="downi"> <a class="down-link " itemNo="6"   href="javascript:;">SPA</a></li>    
+            </ul>  
       </div>
-      <!-- down slider-->
-      
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/havuz1.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/havuz2.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/havuz3.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/havuz4.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa1.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa2.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa3.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa4.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa5.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa6.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa7.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa8.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa9.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa10.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa11.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/villa12.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/activity.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/restoran1.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/restoran2.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/restoran3.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/spa1.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/spa2.jpg"></div>
-          <div class="swiper-slide"><img class="downimg" src="/static/assets/img/album/spa3.jpg"></div>
+            <!-- down slider-->
+      <div class="downswiper-cont" id="gal">
+
+      <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+        <div class="swiper-wrapper gallery" itemNo="1" id="genel">
+          {% for gnl in genels %}
+
+          <div class="swiper-slide"><img class="downimg" id="havuz" src={{gnl.image.url}}></div>
+
+          {% endfor %}
+
 
         </div>
         <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
         <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
       </div>
+
+      <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+        <div class="swiper-wrapper gallery display-none"itemNo="2" id="havuz">
+          {% for hvz in havuzs %}
+
+          <div class="swiper-slide"><img class="downimg" id="havuz" src={{hvz.image.url}}></div>
+          {%endfor%}
+
+        </div>
+        <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+        <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+      </div>
+
+      <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+        <div class="swiper-wrapper gallery display-none"itemNo="3" id="villa">
+          {% for glr in galleryvs %}
+          <div class="swiper-slide"><img class="downimg" id="havuz" src="{{glr.image.url}}></div>
+          {%endfor%}
+
+        </div>
+        <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+        <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+      </div>
+
+      <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+        <div class="swiper-wrapper gallery display-none"itemNo="4"id="activity">
+          {% for act in aktivities %}
+          <div class="swiper-slide"><img class="downimg"src="{{act.image.url}}"></div>
+          {%endfor%}
+        </div>
+        <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+        <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+      </div>
+
+      <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+        <div class="swiper-wrapper gallery display-none" itemNo="5" id="restoran">
+          {% for rst in restorans %}
+          <div class="swiper-slide"><img class="downimg" id="havuz" src="{{rst.image.url}}"></div>
+          {%endfor%}
+        </div>
+        <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+        <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+      </div>
+
+      <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+        <div class="swiper-wrapper gallery display-none" itemNo="6" id="spa">
+          {% for spa in spas %}
+          <div class="swiper-slide"><img class="downimg"src="{{spa.image.url}}"></div>
+          {%endfor%}
+        </div>
+        <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+        <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+      </div>
+
+    </div>
+
+
       <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
       <script src="{% static 'js/scripts.js' %} "></script>
+      <script
+  src="https://code.jquery.com/jquery-3.7.0.js"
+  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
 
 
 </body>

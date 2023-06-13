@@ -1,51 +1,50 @@
-<section class="odalar">
-    <h4 class="odalarh">ODALAR</h4>
-    <div class="card-container">
-      <div class="villa">
-        <img class="villa-img" src="/static/assets/img/villa1.jpg" width="350px" height="450px">
-        <h3 class="villah">Villa la Lila </h3>
-        <div class="villa-info">
-          <p class="villap">400 ㎡</p>
-          <div class="villa-divider"></div>
-          <p class="villap">5 yatak odası  
-          </p>
-          <div class="villa-divider"></div>
-          <p class="villap">Özel yüzme havuzu 24 ㎡</p>
-        </div>
-        <button class="button-34" role="button">DETAYLI İNCELE</button>
-      </div>
-      <div class="villa">
-        <img class="villa-img" src="/static/assets/img/villa2.jpg" width="350px" height="450px">
-        <h3 class="villah">Villa Amerila </h3>
-        <div class="villa-info"><p class="villap">400 ㎡</p>
-          <div class="villa-divider"></div>
-          <p class="villap">5 yatak odası  
-          </p>
-          <div class="villa-divider"></div>
-          <p class="villap">Özel yüzme havuzu 24 ㎡</p>
-        </div>
-        <button class="button-34" role="button">DETAYLI İNCELE</button>
-      </div>
-      <div class="villa">
-        <img class="villa-img" src="/static/assets/img/villa3.jpg" width="350px" height="450px">
-        <h3 class="villah">Villa Palaya </h3>
-        <div class="villa-info">
-          <p class="villap">300 ㎡</p>
-          <div class="villa-divider"></div>
-          <p class="villap">2 yatak odası  
-          </p>
-          <div class="villa-divider"></div>
-          <p class="villap">Özel yüzme havuzu 24 ㎡</p>
-        </div>
-        <button class="button-34" role="button">DETAYLI İNCELE</button>
-      </div>
-    </div>
-    <img class="video2"src="/static/assets/img/video2.png"alt=""width="100px" height="150px"/>
-  </section>
-  <section class="food" id="food">
-    <h3 class="foodh">Frangi Pani Restoran</h3>
-    <h4 class="foodc">12:00/18:00</h4>
-    <p class="foodp">Fast Food yiyeceklerinin muhteşem sunumlarla birleştirilerek alacart olarak sunulduğu restoranımızdır.
+</div> <div class="villa swiper-slide">
+  <img class="villa-img" src="/static/assets/img/amarila.jpg">
+  <h3 class="villah">VILLA AMARILA</h3>
+  <div class="villa-info">
+    <p class="villap">400 ㎡</p>
+    <div class="villa-divider"></div>
+    <p class="villap">5 yatak odası  
     </p>
-    <img class="foodpic"src="/static/assets/img/food.jpg"alt=""width="860  px" height="350px"/>
-  </section>
+    <div class="villa-divider"></div>
+    <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+  </div>
+  <button class="button-34" role="button">DETAYLI İNCELE</button>
+</div>
+<div class="villa swiper-slide"> 
+  <img class="villa-img" src="/static/assets/img/palaya.jpg" >
+  <h3 class="villah">VILLA PALAYA</h3>
+  <div class="villa-info"><p class="villap">400 ㎡</p>
+    <div class="villa-divider"></div>
+    <p class="villap">5 yatak odası  
+    </p>
+    <div class="villa-divider"></div>
+    <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+  </div>
+  <button class="button-34" role="button">DETAYLI İNCELE</button>
+</div>
+<div class="villa swiper-slide">
+  <img class="villa-img" src="/static/assets/img/grand.jpg" >
+  <h3 class="villah">VILLA THE GRAND  </h3>
+  <div class="villa-info"><p class="villap">400 ㎡</p>
+    <div class="villa-divider"></div>
+    <p class="villap">5 yatak odası  
+    </p>
+    <div class="villa-divider"></div>
+    <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+  </div>
+  <button class="button-34" role="button">DETAYLI İNCELE</button>
+</div>
+<div class="villa swiper-slide">
+  <img class="villa-img" src="/static/assets/img/laren.jpg">
+  <h3 class="villah">LAREN SIGNATURE</h3>
+  <div class="villa-info">
+    <p class="villap">300 ㎡</p>
+    <div class="villa-divider"></div>
+    <p class="villap">2 yatak odası  
+    </p>
+    <div class="villa-divider"></div>
+    <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+  </div>
+  <button class="button-34" role="button">DETAYLI İNCELE</button>
+</div>
