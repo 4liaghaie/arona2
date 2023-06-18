@@ -54,12 +54,68 @@ var swiper1 = new Swiper(".mySwiper1", {
         });
 
         var swiper4 = new Swiper(".mySwiper4", {
+          
           navigation: {
             nextEl: ".swiper-button-next4",
             prevEl: ".swiper-button-prev4",
+
           },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+              var out = ''
+              for (i = 1; i < total+1; i++) {
+                if (i == current) {
+                  out = out + '<span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex='+i+' role="button" aria-label="Go to slide '+i+1+'"></span>';
+                }
+                else {
+                  out = out + '<span class="swiper-pagination-bullet" tabindex='+i+' role="button" aria-label="Go to slide '+i+1+'"></span>';
+                }
+              };
+              return out;
+            },}
+
           });
+
+          var swiper5 = new Swiper(".mySwiper5", {
+          
+            navigation: {
+              nextEl: ".swiper-button-next5",
+              prevEl: ".swiper-button-prev5",
   
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+              type: 'custom',
+              renderCustom: function (swiper, current, total) {
+                var out = ''
+                for (i = 1; i < total+1; i++) {
+                  if (i == current) {
+                    out = out + '<span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex='+i+' role="button" aria-label="Go to slide '+i+1+'"></span>';
+                  }
+                  else {
+                    out = out + '<span class="swiper-pagination-bullet" tabindex='+i+' role="button" aria-label="Go to slide '+i+1+'"></span>';
+                  }
+                };
+                return out;
+              },}
+  
+            });
+          
+            var swiper6 = new Swiper(".mySwiper6", {
+              spaceBetween: 30,
+              loop: true,
+              navigation: {
+                nextEl: ".swiper-button-next6",
+                prevEl: ".swiper-button-prev6",
+    
+              },
+             
+    
+              });
 
 
 

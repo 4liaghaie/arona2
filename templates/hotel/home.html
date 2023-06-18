@@ -23,9 +23,9 @@
       </div>
 
     </div>
-    <section class="hakim"> 
+    <section class="hakim" id="hakim"> 
       <h4 class="hakimiz">HAKKIMIZDA</h4>
-      <p class="hakim-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultricies ante. Suspendisse luctus purus arcu, non accumsan sapien congue ut. Integer ut eleifend eros, ut varius nibh. Maecenas porttitor, nunc et dictum consectetur,<br><br>
+      <p class="hakim-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultricies ante. Suspendisse luctus purus arcu, non accumsan sapien congue ut. Integer ut eleifend eros, ut varius nibh. Maecenas porttitor, nunc et dictum consectetur,</br></br>
         risus orci aliquet tellus, quis euismod lorem ligula a magna. Phasellus sit amet vulputate mi. Donec pellentesque pretium turpis, 
         ut faucibus urna dictum a. In convallis tincidunt arcu,<br> 
         eget dignissim massa tristique in. </p>
@@ -36,8 +36,8 @@
         </div>      
     </section>
 
-    <section class="odalar">
-      <h4 class="odalarh">ODALAR</h4>
+    <section class="odalar" id="odalar">
+      <h4 class="odalarh4">ODALAR</h4>
       
       <div  style="--swiper-navigation-color: #70707000; --swiper-pagination-color: #076984" class="swiper swiper1 mySwiper1">
         
@@ -55,7 +55,7 @@
             <div class="villa-divider"></div>
             <p class="villap">Özel yüzme havuzu 24 ㎡</p>
           </div>
-          <button class="button-34" role="button">DETAYLI İNCELE</button>
+          <a href={{vla.url}}><button class="button-34" >DETAYLI İNCELE</button></a>
         
 
       </div>  
@@ -81,7 +81,7 @@
       <h4 class="foodc">{{food.hours}}</h4>
       <p class="foodp">{{ food.info }}
       </p>
-      <a href="#">  <img class="foodpic"src="{{food.food_image_url}}"alt=""width="860  px" height="350px"/></a>
+      <a href="/food">  <img class="foodpic"src="{{food.food_image_url}}"alt=""width="860  px" height="350px"/></a>
     </div>
     {% endfor %}
     
@@ -102,9 +102,9 @@
       </p><h4 class="caveat">Laboris nisi ut aliquip ex ea commodo consequat.</h4></div>
       <div class="kons-right">
         <div class="konspicd">
-        <div class="konspicont"><a href="#"><img class="konspic"src="/static/assets/img/kons1.jpg"alt=""width="190px" height="213px"/></a></div>
-        <div class="konspicont"><a href="#"><img class="konspic"src="/static/assets/img/kons2.jpg"alt=""width="190px" height="213px"/></a></div>
-        <div class="konspicont"><a href="#"><img class="konspic"src="/static/assets/img/kons3.jpg"alt=""width="190px" height="213px"/></a></div>
+        <div class="konspicont"><a href="/activity"><img class="konspic"src="/static/assets/img/kons1.jpg"alt=""width="190px" height="213px"/></a></div>
+        <div class="konspicont"><a href="/activity"><img class="konspic"src="/static/assets/img/kons2.jpg"alt=""width="190px" height="213px"/></a></div>
+        <div class="konspicont"><a href="/activity"><img class="konspic"src="/static/assets/img/kons3.jpg"alt=""width="190px" height="213px"/></a></div>
         </div>
       </div>
     </div> 
@@ -152,7 +152,7 @@
       <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
         <div class="swiper-wrapper gallery display-none"itemNo="3" id="villa">
           {% for glr in galleryvs %}
-          <div class="swiper-slide"><img class="downimg" id="havuz" src="{{glr.image.url}}></div>
+          <div class="swiper-slide"><img class="downimg" id="havuz" src={{glr.image.url}}></div>
           {%endfor%}
 
         </div>
@@ -162,7 +162,7 @@
 
       <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
         <div class="swiper-wrapper gallery display-none"itemNo="4"id="activity">
-          {% for act in aktivities %}
+          {% for act in aktivites %}
           <div class="swiper-slide"><img class="downimg"src="{{act.image.url}}"></div>
           {%endfor%}
         </div>

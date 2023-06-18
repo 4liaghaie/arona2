@@ -3,6 +3,7 @@ from django.db import models
 class Villa(models.Model):
     name = models.CharField(max_length=255)
     metr = models.IntegerField()
+    url = models.CharField(max_length=255, default=None, blank=True, null=True)
     bedrooms = models.CharField(max_length=255)
     info = models.CharField(max_length=255)
     image = models.ImageField(upload_to="",  default=None, blank=True, null=True)
@@ -22,7 +23,7 @@ class Havuz(models.Model):
      name = models.CharField(max_length=255)
      image = models.ImageField(upload_to="",  default=None, blank=True, null=True)
 
-class Galleryv(models.Model):
+class Galleryvilla(models.Model):
      name = models.CharField(max_length=255)
      image = models.ImageField(upload_to="",  default=None, blank=True, null=True)
 
@@ -45,6 +46,8 @@ class Food(models.Model):
     name = models.CharField(max_length=255)
     hours = models.CharField(max_length=255)
     info = models.CharField(max_length=255)
+    page_info1 = models.TextField(null=True)
+    page_info2 = models.TextField(null=True)
     image = models.ImageField(upload_to="",  default=None, blank=True, null=True)
     updated = models.TimeField(auto_now=True)
     created = models.TimeField(auto_now_add=True)

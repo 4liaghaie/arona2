@@ -21,7 +21,7 @@
     <!--fints-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cinzel&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200&family=Poppins:wght@100&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">       <link href="{%static 'css/style.css'%}" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cinzel&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200&family=Poppins:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">       <link href="{%static 'css/style.css'%}" rel="stylesheet" />
     <!-- Font Awesome -->
 <link
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -44,7 +44,7 @@ rel="stylesheet"
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
         
-      <img class="menu-logo"src="/static/assets/img/logo.png"alt="" width="240px" height="60px" />
+        <a href="/">  <img class="menu-logo"src="/static/assets/img/logo.png"alt="" width="240px" height="60px" /></a>
       <div class="mobile-check">
       <p class="checkp">Giriş Tarihi</p>
       <span class="datepicker-toggle">
@@ -66,11 +66,11 @@ rel="stylesheet"
        </div>
        <div class="mobile-nav-cont">
        <ul class="mobile-nav">
-        <li class="nav-mobile-li">GENEL</li>
-        <li class="nav-mobile-li">VİLLALAR</li>
-        <li class="nav-mobile-li">GURME</li>
-       <li class="nav-mobile-li">SPA</li>
-       <li class="nav-mobile-li">AKTİVİTE</li>
+        <a class="nav-mob-link" href="/#navdown">  <li class="nav-mobile-li">GENEL</li></a>
+        <a class="nav-mob-link" href="/#odalar">  <li class="nav-mobile-li">VİLLALAR</li></a>
+        <a class="nav-mob-link" href="/#food">  <li class="nav-mobile-li">GURME</li></a>
+        <a class="nav-mob-link" href="/#navdown"> <li class="nav-mobile-li">SPA</li></a>
+          <a class="nav-mob-link" href="/#navdown"> <li class="nav-mobile-li">AKTİVİTE</li></a>
        </ul></div>
        <div class="menu-social">
 
@@ -94,10 +94,10 @@ rel="stylesheet"
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item"> <a class="nav-link" href="#">HAKKIMIZDA </a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">VİLLALAR </a></li>
-                <li class="nav-item"> <a class="nav-link" href="#">GURME</a></li>
-                <a href="#">          <img class="nav-logo"
+                <li class="nav-item"> <a class="nav-link" href="/#hakim">HAKKIMIZDA </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/#odalar">VİLLALAR </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/#food">GURME</a></li>
+                <a href="/">          <img class="nav-logo"
                     src="/static/assets/img/logo.png"
                     alt=""
                     width="320px"
@@ -105,8 +105,8 @@ rel="stylesheet"
                   />
                 </a>
                 <li class="nav-item-r"> <a class="nav-link" href="#">SPA </a></li>
-                <li class="nav-item-r"> <a class="nav-link" href="#">GALERİ </a></li>
-                <li class="nav-item-r"> <a class="nav-link" href="#">İLETİŞİM</a></li>
+                <li class="nav-item-r"> <a class="nav-link" href="/#navdown">GALERİ </a></li>
+                <li class="nav-item-r"> <a class="nav-link" href="/#footer">İLETİŞİM</a></li>
                 <li class="nav-item-r"><button type="button" class="nav-btn ">RESERVASYON</button></li>
             
                 <li class="nav-item-r dropdown">
@@ -119,7 +119,7 @@ rel="stylesheet"
             </li></ul>
           </div>
         </div>
-        <a href="#">          <img class="nav-logo-mobile"
+        <a href="/">          <img class="nav-logo-mobile"
           src="/static/assets/img/logo.png"
           alt=""
           width="240px"
@@ -152,7 +152,7 @@ rel="stylesheet"
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!-- Footer-->
-    <div class="bg-light">
+    <div class="bg-light" id="footer">
       <footer>
         <a href="#">          <img class="footer-logo"
           src="/static/assets/img/logo.png"
@@ -166,11 +166,11 @@ rel="stylesheet"
           <div class="footer-item-left">
             <div class="footer-nav">
               <ul class="list-group list-group-flush">
-                <li><a class="footer-nav nav-link" href="#">Hakkımızda</a> </li>
-                <li> <a class="footer-nav nav-link">Odalar</a> </li>
-                <li> <a class="footer-nav nav-link">Gurme</a> </li>
+                <li><a class="footer-nav nav-link" href="/#hakim">Hakkımızda</a> </li>
+                <li> <a class="footer-nav nav-link" href="/#odalar">Odalar</a> </li>
+                <li> <a class="footer-nav nav-link" href="/#food">Gurme</a> </li>
                 <li> <a class="footer-nav nav-link">Spa</a> </li>
-                <li> <a class="footer-nav nav-link">Galeri</a> </li>
+                <li> <a class="footer-nav nav-link" href="/#navdown">Galeri</a> </li>
                 <li> <a class="footer-nav nav-link">İletişim</a> </li>
 
             </div>

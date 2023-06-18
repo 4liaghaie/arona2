@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('hotel.urls',namespace='hotel')),
 
+
 ]
 if settings.DEBUG:
     urlpatterns += static(

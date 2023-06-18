@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cinzel&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200&family=Poppins:wght@100&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cinzel&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200&family=Poppins:wght@300&family=Roboto:wght@100;300;400&display=swap');
 .nav-item{
     margin-top: 28px;
     margin-left: 28px;
@@ -150,7 +150,6 @@ display: none;
     font-family: 'poppins', sans-serif;
     text-align: center;
     font-size: 1pc;
-    font-weight: 600;
     color: #4e4242;
   }
   .footer-cont{
@@ -289,16 +288,16 @@ p.copyr{
 
 }
 .reserve-btn{
-  font-family: "poppins"sans-serif;
+  font-family: "poppins",sans-serif;
   background-color: #ffffff;
   border: none;
   color: rgb(56, 56, 56);
-  padding: 20px 42px;
+  padding: 17px 42px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 12px;
-  margin: 4px 2px;
+  margin: 3px 4px;
   cursor: pointer;
 }
 
@@ -312,7 +311,7 @@ p.copyr{
 }
 .reservep{
   color: #ffffff;
-  font-family: "Nunito Sans"sans-serif;
+  font-family: "Nunito Sans",sans-serif;
   margin-left: 50%;
   text-align: center;
 }
@@ -390,7 +389,6 @@ h4.hakimiz{
   padding-top: 80px;
   margin-bottom: 20px;
   font-size: 12px;
-  font-weight:600;
   color: #707070;
 }
 @media only screen and (max-width: 736px) {
@@ -407,8 +405,8 @@ p.hakim-txt{
 @media only screen and (max-width: 736px) {
   p.hakim-txt{
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: "avenir";
     font-size: 12px;
   }}
@@ -482,17 +480,32 @@ p.hakim-txt{
     width: 100%;
   }}
 
-h4.odalarh{
+  .odalarh{
+    background:  url("../assets/img/mask2.jpg");
+    height:  900px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+  }
+  @media only screen and (max-width: 736px) {
+    .odalarh{
+      height:  100%;
+      width: 100%;
+      display: block;
+    }}
+
+h4.odalarh4{
   font-family: "poppins";
   text-align: center;
   padding-top: 140px;
   margin-bottom: 20px;
   font-size: 12px;
-  font-weight:600;
   color: #707070;
 }
 @media only screen and (max-width: 736px) {
-  h4.odalarh{
+  h4.odalarh4{
     padding-top: 60px;
 
   }}
@@ -516,13 +529,15 @@ h4.odalarh{
   color: white;
   text-align: center;
   font-family: "poppins";
-  font-weight: bold;
+
   font-size: 14px;
 }
 .foodpic{
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  object-fit: cover;
+
 
 }
 .food-container{
@@ -605,6 +620,7 @@ flex: 60%;
 .card-container{
 
 
+ 
   display: flex ;
   flex-direction: row;
 
@@ -638,6 +654,7 @@ flex: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  
 
   border-radius: 28px;
   width: 90%;
@@ -665,7 +682,7 @@ height: auto;
 .villa-info{
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 91%;
   height: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -689,7 +706,7 @@ height: auto;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
-  font-family: "poppins"sans-serif;
+  font-family: "poppins",sans-serif;
   font-size: 11px;
   font-weight: 700;
   line-height: 24px;
@@ -711,7 +728,7 @@ height: auto;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
-    font-family: "poppins"sans-serif;
+    font-family: "poppins",sans-serif;
     font-size: 7px;
     font-weight: 700;
     line-height: 24px;
@@ -728,6 +745,29 @@ height: auto;
     margin-bottom: 10px;
 
   }}
+  .button-33{
+    background: #076984;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "poppins",sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 4px 30px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
   @media only screen and (max-width: 736px) {
     .button-33{
       background: #076984;
@@ -735,7 +775,7 @@ height: auto;
       box-sizing: border-box;
       color: #FFFFFF;
       cursor: pointer;
-      font-family: "poppins"sans-serif;
+      font-family: "poppins",sans-serif;
       font-size: 7px;
       font-weight: 700;
       line-height: 24px;
@@ -752,14 +792,76 @@ height: auto;
       margin-bottom: 10px;
 
     }}
+    .button-32{
+      background: #076984;
+      border: 0.5px solid white;
+      border-radius: 999px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      font-family: "poppins",sans-serif;
+      font-size: 7px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      padding: 4px 30px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: fit-content;
+      word-break: break-word;
+      margin-top: 40px;
+      margin-bottom: 10px;
+
+    }
+    .button-31{
+      background: #ffffff;
+      border-radius: 999px;
+      box-sizing: border-box;
+      color: #566c77;
+      cursor: pointer;
+      font-family: "poppins",sans-serif;
+      font-size: 7px;
+      font-weight: 700;
+      line-height: 24px;
+      opacity: 1;
+      outline: 0 solid transparent;
+      padding: 4px 30px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: fit-content;
+      word-break: break-word;
+      border: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  
+    }
+    @media only screen and (max-width: 736px) {
+      .button-31{
+        margin-top: 5px;
+      }}
+    
+
 .villap{
-  font-family: "poppins"sans-serif;
-  font-size: 12px;
-  margin-left: 10px;
+  font-family: "poppins",sans-serif;
+  font-size: 11px;
+
+  margin-left: 15px;
   padding-top: 10px;
-  margin-right: 16px;
+  margin-right: 10px;
 
 }
+
+@media  (max-width: 1290px) {
+  .villap{
+
+    font-size: 11px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }}
 @media only screen and (max-width: 736px) {
   .villap{
     margin-top: -25px;
@@ -818,14 +920,14 @@ height: auto;
 
   }}
 .konseptp{
-  font-family: "roboto"sans-serif;
+  font-family: "roboto",sans-serif;
   font-size: 13px;
 }
 @media only screen and (max-width: 736px) {
   .konseptp{
     margin-left: 20px;
     margin-right: 20px;
-    font-family: "roboto"sans-serif;
+    font-family: "roboto",sans-serif;
     font-size: 11px;}}
 .konsepthr {
   border-top: 2px solid #C9A26F;
@@ -909,7 +1011,7 @@ height: auto;
 .down-link{
   color: #ffffff;
   font-family: "poppins";
-  font-weight: bold;
+
   font-size: 14px;
 }
 
@@ -1079,9 +1181,15 @@ body {
     top: -180px;
 
   }
+  
   .next{
     height: 40px;
     width: 40px;
+    border-radius: 50%;
+  }
+  .next1{
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 0.3);
+    
   }
   @media only screen and (max-width: 736px) {
     .swiper-button-next2{
@@ -1137,8 +1245,83 @@ body {
 }
 .swiper-button-prev3{
   position: relative;
-  left: 9%;
+  left: 6%;
   top:-280px;
+ 
+
+}
+
+.swiper-button-next4{
+  position: relative;
+  right: 4%;
+  top:-580px;
+ 
+
+}
+.swiper-button-prev4{
+  position: relative;
+  left: 5%;
+  top:-580px;
+ 
+
+}
+@media only screen and (max-width: 736px) {
+  .swiper-button-next4{
+    position: relative;
+    left: -1%;
+    top:-480px;
+  }}
+@media only screen and (max-width: 736px) {
+  .swiper-button-prev4{
+    position: relative;
+    right:4%;
+    top:-480px;
+  }}
+
+.swiper-pagination4{
+  position: relative;
+  top: -310px;
+}
+
+.swiper-button-next5{
+  position: relative;
+  right: 3%;
+  top:-300px;
+ 
+
+}
+.swiper-button-prev5{
+  position: relative;
+  left: 5%;
+  top:-300px;
+}
+@media only screen and (max-width: 736px) {
+  .swiper-button-next5{
+    position: relative;
+    right: -1%;
+    top:-200px;
+  }}
+@media only screen and (max-width: 736px) {
+  .swiper-button-prev5{
+    position: relative;
+    left: 5%;
+    top:-200px;
+  }}
+
+.swiper-button-next6{
+  position: relative;
+  right: 5%;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.8);
+  top:-250px;
+
+ 
+
+}
+.swiper-button-prev6{
+  position: relative;
+  
+  left: 5%;
+  top:-250px;
  
 
 }
@@ -1189,7 +1372,7 @@ body {
 .checkp{
   text-align: center;
   color: #005981;
-  font-family:"Nunito Sans"sans-serif ;
+  font-family:"Nunito Sans",sans-serif ;
 }
 
 .numb-cont{
@@ -1209,7 +1392,7 @@ body {
   margin-right: 30px;
   margin-left: 30px;
   color: #005981;
-  font-family:"Nunito Sans"sans-serif ; 
+  font-family:"Nunito Sans",sans-serif ; 
 
 }
 .mobile-nav{
@@ -1249,6 +1432,266 @@ display: none !important;}
 
 
 
+div.acthtml{
+  background: url("../assets/img/acthtml.jpg");
+  background-position: center;
+  background-size: cover;
 
+  width: 100%;
+  height: 1500px;
+}
 
+.villas{
+  background:  url("../assets/img/mask1.jpg");
+  height:  AUTO;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ align-items: center;
+}
+@media only screen and (max-width: 736px) {
+.villas{
+  height: auto;
+}}
 
+.villash{
+  text-align: center;
+  color: #076984;
+  padding-top: 20px;
+  font-family: 'Cinzel', serif;
+}
+.list-cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  width: 60%;
+
+}
+@media only screen and (max-width: 736px) {
+  .list-cont{
+    width: 90%;
+    height: auto;
+  }}
+.list-items{
+  word-break: normal;
+  overflow-wrap: break-word;
+  column-count: 3;
+  column-width: 25%;
+  column-gap: 3rem;
+  font-size: 11px;
+  font-family: "helvetica";
+  list-style: none;
+
+}
+
+@media only screen and (max-width: 736px) {
+  .list-items{
+    column-count: 2;
+    font-size: 9px;
+    column-width:50% ;
+    column-gap: 6rem;
+    font-size: 8px;
+  }}
+
+  .list-items li::before{
+    content: "\2022";
+    color: #00536F;
+    font-size: 12px;
+    width: 1em;
+    margin-left: -0.5em;
+    font-weight: bold;
+    display: inline-block;
+  }
+  .villa-det-cont{
+    width: 60%;
+  }
+  @media only screen and (max-width: 736px) {
+    .villa-det-cont{
+      width: 85%;}}
+.villah4{
+    font-family: "poppins";
+    text-align: left;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight:600;
+    color: #707070;
+  }
+  @media only screen and (max-width: 736px) {
+  .villah4{
+    font-size: 8px;
+  }}
+  .villa-detp{
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 736px) {
+    .villa-detp{
+      font-size: 8px;
+    }}
+  .villa-slide-cont{
+    background:  url("../assets/img/mask4.jpg");
+    height:  500px;
+    width: 100%;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  @media only screen and (max-width: 736px) {
+  .villa-slide-cont{
+    display: none;
+
+  }}
+  .villa-slide-left{
+    height: 100%;
+    max-width: 700px;
+    align-items: center;
+    display: flex;
+  }
+  .villa-slide-right{
+   flex: 50%;
+    height: 100%;
+
+  }
+
+  .villa-slideh{
+    color: white;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    padding-top: 25%;
+  }
+  .villa-slide-img{
+    width: 95%;
+    height: 80%;
+    border-radius: 58px;
+    border: 4px solid white;
+
+    margin-top: 7%;
+    object-fit: cover;
+  }
+  .villa-slidep{
+    margin-left: 100px;
+    margin-right: 100px;
+   text-align: center;
+   color: #ffffff;
+   font-family: "avenir",sans-serif;
+   font-size: 13px;
+  }
+  .villaslide{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .foodslideinfo{
+    height: 300px;
+    width: 100%;
+    background-color: #566c77;
+  }
+  @media only screen and (max-width: 736px) {
+  .foodslideinfo{
+    height:300px;
+    width: 100%;
+    background-color: #566c77;
+  }}
+  .foodslideh{
+    color: #FFFFFF;
+    font-family: 'Cinzel', serif;
+    padding-top: 20px;
+    font-size: 25px;
+  }
+  .foodslideh1{
+    color: #FFFFFF;
+    font-family: 'Cinzel', serif;
+
+  }
+  @media only screen and (max-width: 736px) { 
+  .foodslideh1{
+   font-size: 14px;
+  }}
+.foodslidep{
+  color: #FFFFFF;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-family: "avenir",sans-serif;
+  font-size: 12px;
+
+}
+@media only screen and (max-width: 736px) {
+  .foodslidep{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 11px;
+  }}
+.restoran-slide-cont{
+  background:  url("../assets/img/mask2.jpg");
+  height:  550px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.food-slideh{
+  color: rgb(0, 0, 0);
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  padding-top: 30%;
+}
+.food-slidep{
+  text-align: center;
+  color: #000000;
+  font-family: "avenir",sans-serif;
+  font-size: 13px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.food-slide-img{
+  width: 95%;
+  height: 80%;
+  border-radius: 58px;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.6);
+  margin-top: 7%;
+  object-fit: cover;
+}
+.act-info-cont{
+  background:  url("../assets/img/mask1.jpg");
+  height:  300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ align-items: center;
+}
+.acth{
+  padding-top: 30px;
+  font-size: 20px;
+  font-family: "cinzel",sans-serif;
+  color: #005981;
+}
+.actp{
+
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+  font-family: "avenir",sans-serif;
+}
+
+.nav-mob-link{
+  text-decoration: none;
+  color: #000;
+}
