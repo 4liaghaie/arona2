@@ -75,7 +75,7 @@
     {% for vla in villas %}
     <div class="villa swiper-slide">
       
-      <img class="villa-img" src="{{vla.get_image_url}}">
+      <a href={{vla.url}}><img class="villa-img" src="{{vla.get_image_url}}"></a>
       <h3 class="villah">{{vla.name}}</h3>
       <div class="villa-info">
         <p class="villap">{{vla.metr}} ㎡</p>
@@ -94,32 +94,35 @@
 </div>
 </section>
 <!--web-->
-  <section class="villa-slide-cont">
-    <div  style="--swiper-navigation-color: #70707000; --swiper-pagination-color: #FFFFFF" class=" swiper mySwiper6">
-    <div class="villa-slide-left swiper-wrapper">
+<section class="villa-slide-cont">
+  <div  style="--swiper-navigation-color: #70707000; --swiper-pagination-color: #FFFFFF" class=" swiper mySwiper6">
+  <div class="villa-slide-left swiper-wrapper">
 
-    {% for inf in villainfo %}
-    <div class="villaslide swiper-slide">    
-      <h3 class="villa-slideh">{{inf.name}}</h3>
-      <p class="villa-slidep">Çocuklarınızla keyifli, konforlu ve huzurlu bir tatil sunuyoruz. Kendine ait havuzu ve özel  güneşlenme alanıyla kendinizi özel  hissetmenizi sağlayacaktır.
-      </p>
-      <a href={{inf.url}}><button class="button-32" role="button">DETAYLI İNCELE</button> </a>   
-    </div> 
-    {% endfor %}
-    </div>
-      
-    <div class=" swiper-button-next6"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
-    <div class=" swiper-button-prev6"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
-    <div class="swiper-pagination swiper-pagination6"></div>
+  {% for inf in villainfo %}
+  <div class="villaslide swiper-slide">    
+    <h3 class="villa-slideh">{{inf.name}}</h3>
+    <p class="villa-slidep">Çocuklarınızla keyifli, konforlu ve huzurlu bir tatil sunuyoruz. Kendine ait havuzu ve özel  güneşlenme alanıyla kendinizi özel  hissetmenizi sağlayacaktır.
+    </p>
+    <a href={{inf.url}}><button class="button-32" role="button">DETAYLI İNCELE</button> </a>   
+  </div> 
+  {% endfor %}
   </div>
+    
+  <div class=" swiper-button-next6"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+  <div class=" swiper-button-prev6"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+  <div class="swiper-pagination swiper-pagination6"></div>
+</div>
+<div  style="--swiper-navigation-color: #70707000; --swiper-pagination-color: #FFFFFF" class=" swiper mySwiper6">
+
+  <div class="villa-slide-right swiper-wrapper">
+    {% for inf in villainfo %}
+    <div class=" swiper-slide"><a href={{inf.url}}> <img class="villa-slide-img" src={{inf.inpageimg.url}}></a></div>
+    {% endfor %}
+  </div>
+</div>
 
 
-    <div class="villa-slide-right">
-      <img class="villa-slide-img" src="/static/assets/img/villah.jpg">
-    </div>
-
-
-  </section>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="{% static 'js/scripts.js' %} "></script>

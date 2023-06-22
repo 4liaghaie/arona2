@@ -8,9 +8,9 @@
 <body>
     <div class="masthead">
       <div class="social">
-      <div class="fa fa-facebook"></div>
-      <div class="fa fa-twitter"></div>
-      <div class="fa fa-instagram"></div></div>
+        <a href="https://www.facebook.com/clubarona/"> <div class="fa fa-facebook"></div></a>
+      <a href="https://twitter.com/ClubArona"> <div class="fa fa-twitter"></div></a>
+      <a href="https://instagram.com/clubaronahotel?igshid=MzRlODBiNWFlZA=="> <div class="fa fa-instagram"></div></a></div>
       <a href="#food"><img class="down-btn" src="/static/assets/img/down.png" width="50px" height="50px"></a>
       </div>
     <div id="reserve" class="reserve">
@@ -29,9 +29,9 @@
         risus orci aliquet tellus, quis euismod lorem ligula a magna. Phasellus sit amet vulputate mi. Donec pellentesque pretium turpis, 
         ut faucibus urna dictum a. In convallis tincidunt arcu,<br> 
         eget dignissim massa tristique in. </p>
-        <div class="video">
-          <a href="#"><img class="watch"src="/static/assets/img/watch.png"alt=""width="150px" height="60px"/></a>
-             </div>
+        <a href="https://www.youtube.com/watch?v=2dUC7fbrAWU"> <div class="video">
+          <img class="watch"src="/static/assets/img/watch.png"alt=""width="150px" height="60px"/>
+             </div></a>
         <div class="rect">
         </div>      
     </section>
@@ -45,7 +45,25 @@
         {% for vla in villas %}
         <div class="villa swiper-slide">
           
-          <img class="villa-img" src="{{vla.get_image_url}}">
+          <a href={{vla.url}}> <img class="villa-img" src="{{vla.get_image_url}}"> </a>
+          <h3 class="villah">{{vla.name}}</h3>
+          <div class="villa-info">
+            <p class="villap">{{vla.metr}} ㎡</p>
+            <div class="villa-divider"></div>
+            <p class="villap">5 yatak odası  
+            </p>
+            <div class="villa-divider"></div>
+            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+          </div>
+          <a href={{vla.url}}><button class="button-34" >DETAYLI İNCELE</button></a>
+        
+
+      </div>  
+        {% endfor %}
+        {% for vla in villas %}
+        <div class="villa swiper-slide slide-invis">
+          
+          <a href={{vla.url}}> <img class="villa-img" src="{{vla.get_image_url}}"></a>
           <h3 class="villah">{{vla.name}}</h3>
           <div class="villa-info">
             <p class="villap">{{vla.metr}} ㎡</p>
@@ -92,7 +110,7 @@
 </div>
     </section>
     
-    <section class="konsept"><h4 class="konsepth">KONSEPTİMİZ</h4>
+    <section class="konsept" id="konsept"><h4 class="konsepth">KONSEPTİMİZ</h4>
     <div class="kons-container">
       
       <div class="kons-left"><h2 class="konsepth2">Konsept</h2><hr class="konsepthr">

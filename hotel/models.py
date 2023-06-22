@@ -7,6 +7,7 @@ class Villa(models.Model):
     bedrooms = models.CharField(max_length=255)
     info = models.CharField(max_length=255)
     image = models.ImageField(upload_to="",  default=None, blank=True, null=True)
+    inpageimg = models.ImageField(upload_to="",default=None)
     updated = models.TimeField(auto_now=True)
     created = models.TimeField(auto_now_add=True)
     @property

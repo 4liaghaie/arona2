@@ -70,7 +70,7 @@
     {% for vla in villas %}
     <div class="villa swiper-slide">
       
-      <img class="villa-img" src="{{vla.get_image_url}}">
+      <a href={{vla.url}}><img class="villa-img" src="{{vla.get_image_url}}"></a>
       <h3 class="villah">{{vla.name}}</h3>
       <div class="villa-info">
         <p class="villap">{{vla.metr}} ㎡</p>
@@ -85,6 +85,7 @@
 
   </div>  
     {% endfor %}
+
 </div>
 </div>
 </section>
@@ -107,11 +108,14 @@
     <div class=" swiper-button-prev6"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
     <div class="swiper-pagination swiper-pagination6"></div>
   </div>
+  <div  style="--swiper-navigation-color: #70707000; --swiper-pagination-color: #FFFFFF" class=" swiper mySwiper6">
 
-
-    <div class="villa-slide-right">
-      <img class="villa-slide-img" src="/static/assets/img/villah.jpg">
+    <div class="villa-slide-right swiper-wrapper">
+      {% for inf in villainfo %}
+      <div class=" swiper-slide"><a href={{inf.url}}> <img class="villa-slide-img" src={{inf.inpageimg.url}}></a></div>
+      {% endfor %}
     </div>
+  </div>
 
 
   </section>
