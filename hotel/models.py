@@ -36,6 +36,10 @@ class Restoran(models.Model):
      name = models.CharField(max_length=255)
      image = models.ImageField(upload_to="",  default=None, blank=True, null=True)
 
+class Meeting(models.Model):
+     name = models.CharField(max_length=255)
+     image = models.ImageField(upload_to="",  default=None, blank=True, null=True)
+
 class Spa(models.Model):
      name = models.CharField(max_length=255)
      image = models.ImageField(upload_to="",  default=None, blank=True, null=True)

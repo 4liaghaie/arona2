@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from . models import Villa, Genel, Havuz,Galleryvilla, Aktivite, Restoran, Spa, Food
+from . models import Villa, Genel, Havuz,Galleryvilla, Aktivite, Restoran, Spa, Food, Meeting
  
 
 
@@ -63,3 +63,21 @@ def activity (request):
     spas = Spa.objects.all()
     act = Aktivite.objects.all()
     return render (request, 'hotel/activity.html' , { "genels":genels, "havuzs":havuzs, "galleryvs":galleryvs, "aktivites":aktivites, "restorans":restorans, "spas":spas,"act":act })
+def spa (request):
+    genels = Genel.objects.all()
+    havuzs = Havuz.objects.all()
+    galleryvs = Galleryvilla.objects.all()
+    aktivites = Aktivite.objects.all()
+    restorans = Restoran.objects.all()
+    spas = Spa.objects.all()
+    return render (request, 'hotel/spa.html' , { "genels":genels, "havuzs":havuzs, "galleryvs":galleryvs, "aktivites":aktivites, "restorans":restorans, "spas":spas })
+
+def meeting (request):
+    meetings = Meeting.objects.all()
+    genels = Genel.objects.all()
+    havuzs = Havuz.objects.all()
+    galleryvs = Galleryvilla.objects.all()
+    aktivites = Aktivite.objects.all()
+    restorans = Restoran.objects.all()
+    spas = Spa.objects.all()
+    return render (request, 'hotel/meeting.html' , { "genels":genels, "havuzs":havuzs, "galleryvs":galleryvs, "aktivites":aktivites, "restorans":restorans, "spas":spas, "meetings":meetings })

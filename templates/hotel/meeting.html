@@ -1,0 +1,107 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block title %}Club Arona{% endblock %}
+{% block content %}
+
+<div style="--swiper-navigation-color: #70707000;--swiper-pagination-color: #f7f7f7" class="swiper mySwiper5">
+    <div class="swiper-wrapper" >
+      {% for mtn in meetings %}
+      <div class="swiper-slide"><img class="downimg"  src={{mtn.image.url}}></div>
+      {%endfor%}
+    </div>
+    <div class=" swiper-button-next5"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+    <div class="swiper-button-prev5"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+    <div class="swiper-pagination swiper-pagination5"></div>
+  </div>
+  <section class="act-info-cont">
+    <h3 class="acth">Meeting</h3>
+    <p class="actp">Lorem ipsum dolor sit amet. In illo dolorem aut quaerat aspernatur qui reiciendis consequatur. Est labore consequatur est voluptatibus nihil qui quos dolores ab Quis magni ut aliquid accusantium.
+    </p>
+    <p class="actp">33 aliquid iusto ad laborum asperiores et velit quisquam ut laborum architecto qui reiciendis voluptates a rerum praesentium! Rem mollitia neque et rerum alias est excepturi molestiae in quia voluptas. 
+    </p>
+     </section>
+<div class= "navdown" >
+    <ul class="downul mx-auto" id="navdown">
+        <li class="downi"> <a class="down-link genel active" itemNo="1" href="javascript:;">GENEL </a></li>
+        <li class="downi"> <a class="down-link" itemNo="2" href="javascript:;">HAVUZ </a></li>
+        <li class="downi"> <a class="down-link " itemNo="3" href="javascript:;">VİLLA</a></li>
+        <li class="downi"> <a class="down-link " itemNo="4"  href="javascript:;">AKTİVİTE </a></li>
+        <li class="downi"> <a class="down-link " itemNo="5"  href="javascript:;">RESTORAN </a></li>
+        <li class="downi"> <a class="down-link " itemNo="6"   href="javascript:;">SPA</a></li>    
+    </ul>  
+</div>
+<div class="downswiper-cont" id="gal">
+
+    <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+      <div class="swiper-wrapper gallery" itemNo="1" id="genel">
+        {% for gnl in genels %}
+
+        <div class="swiper-slide"><img class="downimg" id="havuz" src={{gnl.image.url}}></div>
+
+        {% endfor %}
+
+
+      </div>
+      <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+      <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+    </div>
+
+    <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+      <div class="swiper-wrapper gallery display-none"itemNo="2" id="havuz">
+        {% for hvz in havuzs %}
+
+        <div class="swiper-slide"><img class="downimg" id="havuz" src={{hvz.image.url}}></div>
+        {%endfor%}
+
+      </div>
+      <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+      <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+    </div>
+
+    <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+      <div class="swiper-wrapper gallery display-none"itemNo="3" id="villa">
+        {% for glr in galleryvs %}
+        <div class="swiper-slide"><img class="downimg" id="havuz" src={{glr.image.url}}></div>
+        {%endfor%}
+
+      </div>
+      <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+      <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+    </div>
+
+    <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+      <div class="swiper-wrapper gallery display-none"itemNo="4"id="activity">
+        {% for act in aktivites %}
+        <div class="swiper-slide"><img class="downimg"src="{{act.image.url}}"></div>
+        {%endfor%}
+      </div>
+      <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+      <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+    </div>
+
+    <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+      <div class="swiper-wrapper gallery display-none" itemNo="5" id="restoran">
+        {% for rst in restorans %}
+        <div class="swiper-slide"><img class="downimg" id="havuz" src="{{rst.image.url}}"></div>
+        {%endfor%}
+      </div>
+      <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+      <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+    </div>
+
+    <div style="--swiper-navigation-color: #70707000;" class="swiper mySwiper3">
+      <div class="swiper-wrapper gallery display-none" itemNo="6" id="spa">
+        {% for spa in spas %}
+        <div class="swiper-slide"><img class="downimg"src="{{spa.image.url}}"></div>
+        {%endfor%}
+      </div>
+      <div class=" swiper-button-next3"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+      <div class="swiper-button-prev3"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="{% static 'js/scripts.js' %} "></script>
+{% endblock %}
