@@ -164,6 +164,19 @@ var swiper1 = new Swiper(".mySwiper1", {
               },
               });
 
+              var swiper7 = new Swiper(".mySwiper7", {
+                loop: true,
+                navigation: {
+                  nextEl: ".swiper-button-next7",
+                  prevEl: ".swiper-button-prev7",
+                },
+                autoplay: {
+                  delay: 4000,
+                  disableOnInteraction: false,
+                },
+        
+                });
+
 
 
         function openNav() {
@@ -201,4 +214,76 @@ var swiper1 = new Swiper(".mySwiper1", {
           links.forEach(function(d){ d.onclick = hide; })
         }
 
-       
+        function scrollTrigger(selector, options = {}){
+          let els = document.querySelectorAll(selector)
+          els = Array.from(els)
+          els.forEach(el => {
+              addObserver(el, options)
+          })
+      }
+      
+      function addObserver(el, options){
+          if(!('IntersectionObserver' in window)){
+              if(options.cb){
+                  options.cb(el)
+              }else{
+                  entry.target.classList.add('actve')
+              }
+              return
+          }
+          let observer = new IntersectionObserver((entries, observer) => { //this takes a callback function which receives two arguments: the elemts list and the observer instance
+              entries.forEach(entry => {
+                  if(entry.isIntersecting){
+                      if(options.cb){
+                          options.cb(el)
+                      }else{
+                          entry.target.classList.add('actve')
+                      }
+                      observer.unobserve(entry.target)
+                  }
+              })
+          }, options)
+          observer.observe(el)
+      }
+
+      
+      scrollTrigger('.scroll-reveal')
+
+
+      function scrollTrigger1(selector, options = {}){
+        let els = document.querySelectorAll(selector)
+        els = Array.from(els)
+        els.forEach(el => {
+            addObserver1(el, options)
+        })
+    }
+    
+    function addObserver1(el, options){
+        if(!('IntersectionObserver' in window)){
+            if(options.cb){
+                options.cb(el)
+            }else{
+                entry.target.classList.add('actve')
+            }
+            return
+        }
+        let observer = new IntersectionObserver((entries, observer) => { //this takes a callback function which receives two arguments: the elemts list and the observer instance
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    if(options.cb){
+                        options.cb(el)
+                    }else{
+                        entry.target.classList.add('acte')
+                    }
+                    observer.unobserve(entry.target)
+                }
+            })
+        }, options)
+        observer.observe(el)
+    }
+
+    
+    scrollTrigger1('.scroll-reveal1')
+         
+     
+

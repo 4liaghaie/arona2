@@ -1,4 +1,8 @@
 {% load static %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages%}
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,7 +25,7 @@
     <!--fints-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cinzel&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200&family=Poppins:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">       <link href="{%static 'css/style.css'%}" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cinzel&family=Montserrat:wght@100;200;300&family=Nunito+Sans:wght@200&family=Poppins:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">      <link href="{%static 'css/style.css'%}" rel="stylesheet" />
     <!-- Font Awesome -->
 <link
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -46,37 +50,37 @@ rel="stylesheet"
         
         <a href="/">  <img class="menu-logo"src="/static/assets/img/logo.png"alt="" width="240px" height="60px" /></a>
       <div class="mobile-check">
-      <p class="checkp">Giriş Tarihi</p>
+      <p class="checkp">{% translate "Giriş Tarihi"%}</p>
       <span class="datepicker-toggle">
       <input type="date"></div>
-      <div class="mobile-check"><p class="checkp"> Çıkış Tarihi</p>
+      <div class="mobile-check"><p class="checkp"> {% translate "Çıkış Tarihi"%}</p>
       <input type="date"></div>
       <div class="numb-cont">
         <div class"numb-cont-item">
-      <p class="numbp">Kişi Sayısı</p>
+      <p class="numbp">{% translate "Kişi Sayısı"%}</p>
       <input type="number" value="0"  min="0" max="10">
         </div>
         <div class"numb-cont-item">
-      <p class="numbp">Çocuk Sayısı</p>
+      <p class="numbp">{% translate "Çocuk Sayısı"%}</p>
       <input type="number" value="0"  min="0" max="10"></div>
       </div>
       <div class="cont-33">
-      <button class="button-33" role="button">REZERVASYON YAP</button>   
+      <button class="button-33" role="button">{% translate " REZERVASYON YAP " %}</button>   
       </div>
        </div>
        <div class="mobile-nav-cont">
        <ul class="mobile-nav">
-        <a class="nav-mob-link" href="/#navdown" onclick="closeNav()">  <li class="nav-mobile-li">GENEL</li></a>
-        <a class="nav-mob-link" href="/#odalar" onclick="closeNav()">  <li class="nav-mobile-li">VİLLALAR</li></a>
-        <a class="nav-mob-link" href="/#food" onclick="closeNav()">  <li class="nav-mobile-li">GURME</li></a>
-        <a class="nav-mob-link" href="/#konsept" onclick="closeNav()"> <li class="nav-mobile-li">SPA</li></a>
-          <a class="nav-mob-link" href="/activity" onclick="closeNav()"> <li class="nav-mobile-li">AKTİVİTE</li></a>
+        <a class="nav-mob-link" href="/{{ LANGUAGE_CODE }}#navdown" onclick="closeNav()">  <li class="nav-mobile-li">{% translate " GENEL"%}</li></a>
+        <a class="nav-mob-link" href="/{{ LANGUAGE_CODE }}#odalar" onclick="closeNav()">  <li class="nav-mobile-li">{% translate " VİLLALAR"%}</li></a>
+        <a class="nav-mob-link" href="/{{ LANGUAGE_CODE }}#food" onclick="closeNav()">  <li class="nav-mobile-li">{% translate "GURME"%}</li></a>
+        <a class="nav-mob-link" href="/{{ LANGUAGE_CODE }}#konsept" onclick="closeNav()"> <li class="nav-mobile-li">{% translate "SPA"%}</li></a>
+          <a class="nav-mob-link" href="/{{ LANGUAGE_CODE }}/activity" onclick="closeNav()"> <li class="nav-mobile-li">{% translate "AKTİVİTE"%}</li></a>
        </ul></div>
        <div class="menu-social">
 
         <a href="https://www.facebook.com/clubarona/"> <div class="fa fa1 fa-facebook"></div></a>
        <a href="https://twitter.com/ClubArona"> <div class="fa fa1 fa-twitter"></div></a>
-       <a href="https://instagram.com/clubaronahotel?igshid=MzRlODBiNWFlZA=="><div class="fa fa1 fa-instagram"></div></a>
+       <a href="https://instagram.com/clubarona?igshid=MTI1ZDU5ODQ3Yw=="><div class="fa fa1 fa-instagram"></div></a>
 
        </div>
     </div>
@@ -94,32 +98,35 @@ rel="stylesheet"
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item"> <a class="nav-link" href="/#hakim">HAKKIMIZDA </a></li>
-                <li class="nav-item"> <a class="nav-link" href="/#odalar">VİLLALAR </a></li>
-                <li class="nav-item"> <a class="nav-link" href="/#food">GURME</a></li>
-                <a href="/">          <img class="nav-logo"
+                <li class="nav-item"> <a class="nav-link" href="/{{ LANGUAGE_CODE }}#hakim">{% translate "HAKKIMIZDA"%} </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/{{ LANGUAGE_CODE }}#odalar">{% translate "VİLLALAR"%} </a></li>
+                <li class="nav-item"> <a class="nav-link" href="/{{ LANGUAGE_CODE }}#food">{% translate "GURME"%} </a></li>
+                <a href="/{{ LANGUAGE_CODE }}">          <img class="nav-logo"
                     src="/static/assets/img/logo.png"
                     alt=""
                     width="320px"
                     height="80px"
                   />
                 </a>
-                <li class="nav-item-r"> <a class="nav-link" href="/#konsept">SPA </a></li>
-                <li class="nav-item-r"> <a class="nav-link" href="/#navdown">GALERİ </a></li>
-                <li class="nav-item-r"> <a class="nav-link" href="/#footer">İLETİŞİM</a></li>
-                <li class="nav-item-r"><button type="button" class="nav-btn ">RESERVASYON</button></li>
+                <li class="nav-item-r"> <a class="nav-link" href="/{{ LANGUAGE_CODE }}#konsept">{% translate "SPA"%} </a></li>
+                <li class="nav-item-r"> <a class="nav-link" href="/{{ LANGUAGE_CODE }}#navdown">{% translate "GALERİ"%} </a></li>
+                <li class="nav-item-r"> <a class="nav-link" href="/{{ LANGUAGE_CODE }}#footer">{% translate "İLETİŞİM"%}</a></li>
+                <li class="nav-item-r"><button type="button" class="nav-btn ">{% translate "RESERVASYON"%}</button></li>
             
                 <li class="nav-item-r dropdown">
               <a class="nav-link dr-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                TR
+                {% translate "TR" %}
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item nav-link" href="#">EN</a></li>
+         
+                {% for lang in languages%}
+                <li><a class="dropdown-item nav-link select-lang" href="/{{ lang.code }}{{ request.get_full_path|slice:'3:' }}">{{ lang.code}}</a></li>
+                {% endfor %}
               </ul>
             </li></ul>
           </div>
         </div>
-        <a href="/">          <img class="nav-logo-mobile"
+        <a href="/{{ LANGUAGE_CODE }}">          <img class="nav-logo-mobile"
           src="/static/assets/img/logo.png"
           alt=""
           width="240px"
@@ -127,10 +134,15 @@ rel="stylesheet"
         />
         <div class="nav-item-d dropdown lang-mobile">
           <a class="nav-link dr-down dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            TR
+            {% translate "TR" %}  
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">EN</a></li>
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages%}
+            {% for lang in languages%}
+            <li><a class="dropdown-item nav-link select-lang" href="/{{ lang.code }}{{ request.get_full_path|slice:'3:' }}">{{ lang.code}}</a></li>
+            {% endfor %}
     </nav>
     
 
@@ -166,23 +178,23 @@ rel="stylesheet"
           <div class="footer-item-left">
             <div class="footer-nav">
               <ul class="list-group list-group-flush">
-                <li><a class="footer-nav nav-link" href="/#hakim">Hakkımızda</a> </li>
-                <li> <a class="footer-nav nav-link" href="/#odalar">Odalar</a> </li>
-                <li> <a class="footer-nav nav-link" href="/#food">Gurme</a> </li>
-                <li> <a class="footer-nav nav-link" href="/#konsept">Spa</a> </li>
-                <li> <a class="footer-nav nav-link" href="/#navdown">Galeri</a> </li>
-                <li> <a class="footer-nav nav-link">İletişim</a> </li>
+                <li><a class="footer-nav nav-link" href="/#hakim">{% translate "Hakkımızda"%}</a> </li>
+                <li> <a class="footer-nav nav-link" href="/#odalar">{% translate "Odalar"%}</a> </li>
+                <li> <a class="footer-nav nav-link" href="/#food">{% translate "Gurme"%}</a> </li>
+                <li> <a class="footer-nav nav-link" href="/#konsept">{% translate "Spa"%}</a> </li>
+                <li> <a class="footer-nav nav-link" href="/#navdown">{% translate "Galeri"%}</a> </li>
+                <li> <a class="footer-nav nav-link">{% translate "İletişim"%}</a> </li>
 
             </div>
             <div class="footer-cont">
               <ul class="list-group list-group-flush">
-                <li class="footer-cont"></i> <img class="icon"src="/static/assets/img/phone.png"alt=""width="20px" height="20px"/>0 242 242 42 42</li>
+                <li class="footer-cont"></i> <img class="icon"src="/static/assets/img/phone.png"alt=""width="20px" height="20px"/>0242 246 40 40</li>
                 <li class="footer-cont"><img class="icon"src="/static/assets/img/pin.png"alt=""width="14px" height="21px"/>Atatürk Cd. No:104, 07500, 07500 Belek/Antalya</li>
                 <li class="footer-cont mt-3"> <a href="https://www.youtube.com/watch?v=2dUC7fbrAWU"><img class="icon"src="/static/assets/img/youtube.png"alt=""width="30px" height="30px"/></a>
                   <a href="https://twitter.com/ClubArona"><img class="icon"src="/static/assets/img/twitter.png"alt=""width="30px" height="30px"/></a>
                   <a href="https://www.facebook.com/clubarona/"> <img class="icon"src="/static/assets/img/facebook.png"alt=""width="30px" height="30px"/>
-                    <a href="https://instagram.com/clubaronahotel?igshid=MzRlODBiNWFlZA=="> <img class="icon"src="/static/assets/img/instagram.png"alt=""width="30px" height="30px"/></a></li>
-                <li class="footer-cont catalog mt-4"><img class="icon"src="/static/assets/img/pdf.png"alt=""width="40px" height="40px"/><strong>E- KATALOG</strong> DOSYASI İNDİR </li>
+                    <a href='https://instagram.com/clubarona?igshid=MTI1ZDU5ODQ3Yw=='> <img class="icon"src="/static/assets/img/instagram.png"alt=""width="30px" height="30px"/></a></li>
+                <li class="footer-cont catalog mt-4"><img class="icon"src="/static/assets/img/pdf.png"alt=""width="40px" height="40px"/><strong>{% translate "E- KATALOG" %}</strong>{% translate " DOSYASI İNDİR"%} </li>
                 <li class="footer-cont">mail: info@clubarona.com</li>
               </ul>
               <hr class="divider divider-mobile" />
@@ -194,23 +206,14 @@ rel="stylesheet"
 <!-- googlemap-->
           <div class="footer-item-right">
             <div class="gmap ratio ratio-16x9">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6570.081970847047!2d31.00869525323411!3d36.87785078383357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c37b62cb60827f%3A0xd504e8af7d613a38!2sThe%20Land%20of%20Legends%20Shopping%20Avenue!5e0!3m2!1str!2sno!4v1685481569755!5m2!1str!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
-            </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2822.3771809857367!2d30.99739590608519!3d36.89111041054639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzbCsDUzJzI4LjEiTiAzMMKwNTknNTEuMCJF!5e0!3m2!1str!2sde!4v1687852112399!5m2!1str!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
           </div>
         </div>
         <hr class="divider divider-mobile" />
-        <div class=" catalog-mobile mt-4"><a class="nav-link" href="#"><img class="icon"src="/static/assets/img/pdf.png"alt=""width="40px" height="40px"/><strong>E- KATALOG</strong> DOSYASI İNDİR </div>
-        <hr class="divider" />
-        <pre class=" prefoot">Gizlilik İlkeleri     Kurallar ve Yönetmelikler     K.V.KK </pre>
-        <hr class="divider" />
+        <div class=" catalog-mobile mt-4"><a class="nav-link" href="#"><img class="icon"src="/static/assets/img/pdf.png"alt=""width="40px" height="40px"/><strong>{% translate "E- KATALOG" %}</strong>{% translate " DOSYASI İNDİR"%}</div>
+        <pre class=" prefoot">{% translate "Gizlilik İlkeleri     Kurallar ve Yönetmelikler     K.V.KK "%}</pre>
         <h3 class="pwrd">POWERED BY</h3>
-        <a href="#">          <img class="footer-logo1"
-          src="/static/assets/img/prego.png"
-          alt=""
-          width="150px"
-          height="60px"
-        />
-        </a>
+        <h3 class="pwrd">WHTUR</h3>
         <pre class=" mt-3 prefoot">© 2023 ALL RIGHTS RESERVED</pre>
          
           

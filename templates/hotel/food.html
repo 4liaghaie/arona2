@@ -2,6 +2,7 @@
 {% load static %}
 {% block title %}Club Arona{% endblock %}
 {% block content %}
+{% load i18n %}
 
 
 <div style="--swiper-navigation-color: #70707000;--swiper-pagination-color: #f7f7f7" class="swiper mySwiper4">
@@ -11,11 +12,9 @@
       <div class="foodslideinfo">
         <h3 class="foodslideh">{{fdh.name}}</h3>
         <h5 class="foodslideh1">{{fdh.hours}}</h5>
-        <p class="foodslidep">Lorem ipsum dolor sit amet. In illo dolorem aut quaerat aspernatur qui reiciendis consequatur. Est labore consequatur est voluptatibus nihil qui quos dolores ab Quis magni ut aliquid accusantium.
+        <p class="foodslidep">{{fdh.info}}
         <p>
-          <p class="foodslidep">33 aliquid iusto ad laborum asperiores et velit quisquam ut laborum architecto qui reiciendis voluptates a rerum praesentium! Rem mollitia neque et rerum alias est excepturi molestiae in quia voluptas. 
-          </p>
-          <button class="button-31" role="button">MENÜLERİ İNCELE</button>  
+          <button class="button-31" role="button">{% translate "MENÜLERİ İNCELE"%}</button>
 
       </div></div>
       {% endfor %}
@@ -33,8 +32,8 @@
         <li class="downi"> <a class="down-link " itemNo="3" href="javascript:;">VİLLA</a></li>
         <li class="downi"> <a class="down-link " itemNo="4"  href="javascript:;">AKTİVİTE </a></li>
         <li class="downi"> <a class="down-link " itemNo="5"  href="javascript:;">RESTORAN </a></li>
-        <li class="downi"> <a class="down-link " itemNo="6"   href="javascript:;">SPA</a></li>    
-    </ul>  
+        <li class="downi"> <a class="down-link " itemNo="6"   href="javascript:;">SPA</a></li>
+    </ul>
 </div>
 <div class="downswiper-cont" id="gal">
 

@@ -2,16 +2,38 @@
 {% load static %}
 {% block title %}Club Arona{% endblock %}
 {% block content %}
+{% load i18n %}
+<html lang="tr">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="masthead">
+
+      
+      
+      <div style="--swiper-navigation-color: #eeeeee00; --swiper-pagination-color: #f7f7f7" class="swiper mySwiper7">
+        <div class="swiper-wrapper">
+          {% for sld in slider %}
+          <div class=" swiper-slide">
+      <img class="mastpic" src={{sld.image.url}} ></div> 
+      {% endfor %}
+
+    
+    
+    </div>
+    <div class=" swiper-button-next7"><div class="swiper-button-next"><img class="next" src="/static/assets/img/next.png" ></div></div>
+      <div class=" swiper-button-prev7"><div class="swiper-button-prev"><img class="next" src="/static/assets/img/prev.png" ></div></div>
+      </div>
+      
+      
       <div class="social">
+     
+
         <a href="https://www.facebook.com/clubarona/"> <div class="fa fa-facebook"></div></a>
       <a href="https://twitter.com/ClubArona"> <div class="fa fa-twitter"></div></a>
-      <a href="https://instagram.com/clubaronahotel?igshid=MzRlODBiNWFlZA=="> <div class="fa fa-instagram"></div></a></div>
-      <a href="#food"><img class="down-btn" src="/static/assets/img/down.png" width="50px" height="50px"></a>
+      <a href="https://instagram.com/clubarona?igshid=MTI1ZDU5ODQ3Yw=="> <div class="fa fa-instagram"></div></a></div>
+      <a href="#hakim"><img class="down-btn scroll-reveal" src="/static/assets/img/down.png" width="50px" height="50px"></a>
       </div>
     <div id="reserve" class="reserve">
       <div class="reserveui">
@@ -24,57 +46,54 @@
 
     </div>
     <section class="hakim" id="hakim"> 
-      <h4 class="hakimiz">HAKKIMIZDA</h4>
-      <p class="hakim-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et ultricies ante. Suspendisse luctus purus arcu, non accumsan sapien congue ut. Integer ut eleifend eros, ut varius nibh. Maecenas porttitor, nunc et dictum consectetur,</br></br>
-        risus orci aliquet tellus, quis euismod lorem ligula a magna. Phasellus sit amet vulputate mi. Donec pellentesque pretium turpis, 
-        ut faucibus urna dictum a. In convallis tincidunt arcu,<br> 
-        eget dignissim massa tristique in. </p>
-        <a href="https://www.youtube.com/watch?v=2dUC7fbrAWU"> <div class="video">
+      <h4 class="hakimiz scroll-reveal">{%translate "HAKKIMIZDA" %}</h4>
+      <p class="hakim-txt scroll-reveal">{%translate "Club Arona Villas & Wellness, sıra dışı tatil deneyimleri yaşamanız ve yeni çağın modern, ayrıcalıklı tatillerinde yerinizi almanız için sizi bekliyor. Üst düzey konseptiyle benzersiz konaklama, lezzet, eğlence ve keyif tatilleri vadeden Club Arona Villas, değerli misafirlerinin unutulmaz anlar ve benzersiz anılar biriktirmesini sağlar. Size özel bir tatil planı için siz de Club Arona Villas tatillerinde yerinizi alın."%}  </p>
+        <a href="https://www.youtube.com/watch?v=2dUC7fbrAWU"> <div class="video scroll-reveal">
           <img class="watch"src="/static/assets/img/watch.png"alt=""width="150px" height="60px"/>
              </div></a>
-        <div class="rect">
+        <div class="rect scroll-reveal">
         </div>      
     </section>
 
     <section class="odalar" id="odalar">
-      <h4 class="odalarh4">ODALAR</h4>
+      <h4 class="odalarh4">{%translate "ODALAR" %}</h4>
       
-      <div  style="--swiper-navigation-color: #70707000; --swiper-pagination-color: #076984" class="swiper swiper1 mySwiper1">
+      <div  style="--swiper-navigation-color: #70707000; --swiper-pagination-color: #076984" class="swiper scroll-reveal swiper1 mySwiper1">
         
       <div class="card-container swiper-wrapper">
         {% for vla in villas %}
         <div class="villa swiper-slide">
-          
-          <a href={{vla.url}}> <img class="villa-img" src="{{vla.get_image_url}}"> </a>
+
+          <a href="/{{ LANGUAGE_CODE }}{{vla.url}}"> <img class="villa-img" src="{{vla.get_image_url}}"> </a>
           <h3 class="villah">{{vla.name}}</h3>
           <div class="villa-info">
             <p class="villap">{{vla.metr}} ㎡</p>
             <div class="villa-divider"></div>
-            <p class="villap">5 yatak odası  
+            <p class="villap">{{vla.bedrooms}}  
             </p>
             <div class="villa-divider"></div>
-            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+            <p class="villap">{{vla.info}}</p>
           </div>
-          <a href={{vla.url}}><button class="button-34" >DETAYLI İNCELE</button></a>
+
+          <button onclick="window.location.href='/{{ LANGUAGE_CODE }}{{vla.url}}'" class="button-34" >{%translate "DETAYLI İNCELE" %}</button>
         
 
       </div>  
         {% endfor %}
         {% for vla in villas %}
         <div class="villa swiper-slide slide-invis">
-          
-          <a href={{vla.url}}> <img class="villa-img" src="{{vla.get_image_url}}"></a>
-          <h3 class="villah">{{vla.name}}</h3>
+          <a href="/{{ LANGUAGE_CODE }}{{vla.url}}"><img class="villa-img" src="{{vla.get_image_url}}"></a>
+          <h3 class="villah"> {{vla.name}}</h3>
           <div class="villa-info">
             <p class="villap">{{vla.metr}} ㎡</p>
             <div class="villa-divider"></div>
-            <p class="villap">5 yatak odası  
+            <p class="villap">{{vla.bedrooms}}  
             </p>
             <div class="villa-divider"></div>
-            <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+            <p class="villap">{{vla.info}}</p>
           </div>
-          <a href={{vla.url}}><button class="button-34" >DETAYLI İNCELE</button></a>
-        
+          <button onclick="window.location.href='/{{ LANGUAGE_CODE }}{{vla.url}}'" class="button-34" >{%translate "DETAYLI İNCELE" %}</button>
+
 
       </div>  
         {% endfor %}
@@ -86,7 +105,7 @@
 
     </div>
     
-      <img class="video2"src="/static/assets/img/video2.png"alt=""width="100px" height="150px"/>
+      <img class="video2 scroll-reveal"src="/static/assets/img/video2.png"alt=""width="100px" height="150px"/>
     </section>
     <section class="food" id="food">
       <div style="--swiper-navigation-color: #eeeeee00; --swiper-pagination-color: #f7f7f7" class="swiper mySwiper2">
@@ -95,11 +114,15 @@
           {% for food in foods %}
 
     <div class="food-container swiper-slide" >
+      <diV class="foodmotion scroll-reveal">
       <h3 class="foodh">{{food.name}}</h3>
       <h4 class="foodc">{{food.hours}}</h4>
-      <p class="foodp">{{ food.info }}
-      </p>
-      <a href="/food">  <img class="foodpic"src="{{food.food_image_url}}"alt=""width="860  px" height="350px"/></a>
+      <div class="food-txt-cont">
+      <p class="foodp"> {{ food.info }}</div>
+      </p></div>
+      {% get_language_info_list for LANGUAGES as languages%}
+                {% for lang in languages%}
+      <a href="/{{ LANGUAGE_CODE }}/food">{% endfor %} <img class="foodpic scroll-reveal"src="{{food.food_image_url}}"/></a>
     </div>
     {% endfor %}
     
@@ -110,32 +133,31 @@
 </div>
     </section>
     
-    <section class="konsept" id="konsept"><h4 class="konsepth">KONSEPTİMİZ</h4>
+    
+    <section class="konsept" id="konsept"><h4 class="konsepth">{%translate "KONSEPTİMİZ" %}</h4>
     <div class="kons-container">
       
-      <div class="kons-left"><h2 class="konsepth2">Konsept</h2><hr class="konsepthr">
-      <p class="konseptp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        
-      </p><h4 class="caveat">Laboris nisi ut aliquip ex ea commodo consequat.</h4></div>
+      <div class="kons-left"><div class="kons-motion scroll-reveal"><h2 class="konsepth2">{%translate "Konsept"%}</h2><hr class="konsepthr">
+      <p class="konseptp">{%translate "Tatil beklentilerinde sınırların olmadığını gösteren ve sizi hayallerinizin ötesinde deneyimlere taşıyacak olan Club Arona Villas, ultra lüks hizmetleri, konfor ve şıklığın benzersiz bileşimi olan konsepti ve her anınızı ayrıcalıklı kılacak tesis özellikleriyle sizleri ağırlıyor. Siz de tatilde lüks tutkunuzu bambaşka bir seviyede gerçeğe dönüştürmek için deneyimlerinizi artırın. Club Arona Villas’ın sunduğu seçkin hizmetleri keşfetmeye başlayın."%}
+      </p><h4 class="caveat">{%translate "Club Arona Villas’ın sunduğu seçkin hizmetleri keşfetmeye başlayın."%}</h4></div></div>
       <div class="kons-right">
-        <div class="konspicd">
-        <div class="konspicont"><a href="/spa"><img class="konspic"src="/static/assets/img/kons1.jpg"alt=""width="190px" height="213px"/></a></div>
-        <div class="konspicont"><a href="/activity"><img class="konspic"src="/static/assets/img/kons2.jpg"alt=""width="190px" height="213px"/></a></div>
-        <div class="konspicont"><a href="/meeting"><img class="konspic"src="/static/assets/img/kons3.jpg"alt=""width="190px" height="213px"/></a></div>
+        <div class="konspicd scroll-reveal">
+        <div class="konspicont"><a href="/{{ LANGUAGE_CODE }}/spa"><img class="konspic"src="/static/assets/img/kons1.jpg"alt=""width="190px" height="213px"/></a></div>
+        <div class="konspicont"><a href="/{{ LANGUAGE_CODE }}/activity"><img class="konspic"src="/static/assets/img/kons2.jpg"alt=""width="190px" height="213px"/></a></div>
+        <div class="konspicont"><a href="/{{ LANGUAGE_CODE }}/meeting"><img class="konspic"src="/static/assets/img/kons3.jpg"alt=""width="190px" height="213px"/></a></div>
         </div>
       </div>
     </div> 
     </section>
     
-      <div class= "navdown" >
+      <div class= "navdown scroll-reveal" >
             <ul class="downul mx-auto" id="navdown">
-                <li class="downi"> <a class="down-link genel active" itemNo="1" href="javascript:;">GENEL </a></li>
-                <li class="downi"> <a class="down-link" itemNo="2" href="javascript:;">HAVUZ </a></li>
-                <li class="downi"> <a class="down-link " itemNo="3" href="javascript:;">VİLLA</a></li>
-                <li class="downi"> <a class="down-link " itemNo="4"  href="javascript:;">AKTİVİTE </a></li>
-                <li class="downi"> <a class="down-link " itemNo="5"  href="javascript:;">RESTORAN </a></li>
-                <li class="downi"> <a class="down-link " itemNo="6"   href="javascript:;">SPA</a></li>    
+                <li class="downi"> <a class="down-link genel active" itemNo="1" href="javascript:;">{%translate "GENEL"%} </a></li>
+                <li class="downi"> <a class="down-link" itemNo="2" href="javascript:;">{%translate "HAVUZ"%} </a></li>
+                <li class="downi"> <a class="down-link " itemNo="3" href="javascript:;">{%translate "VİLLA"%}</a></li>
+                <li class="downi"> <a class="down-link " itemNo="4"  href="javascript:;">{%translate "AKTİVİTE"%} </a></li>
+                <li class="downi"> <a class="down-link " itemNo="5"  href="javascript:;">{%translate "RESTORAN "%}</a></li>
+                <li class="downi"> <a class="down-link " itemNo="6"   href="javascript:;">{%translate "SPA"%}</a></li>    
             </ul>  
       </div>
             <!-- down slider-->

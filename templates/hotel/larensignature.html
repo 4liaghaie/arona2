@@ -2,6 +2,8 @@
 {% load static %}
 {% block title %}Club Arona{% endblock %}
 {% block content %}
+{% load i18n %}
+<html lang="tr">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -29,53 +31,47 @@
     </p>
     <div class="list-cont">
       <ul class="list-items">
-        <li >1 Adet Göl Kenarı</li>
-        <li>Genel Alan 500 m²</li>
-        <li>Villa Alan 330 m²</li>
-        <li>Bahçe Alan 350 m²</li>
-        <li >Özel Yüzme Havuzu 30 m²</li>
-        <li>3 Kat</li>
-        <li>6+1 (2 Yatak Odası + 1 Salon + 1 çalışma odası)</li>
-        <li>Private Island (Özel aşçılı Restoran)</li>
-        <li>Robot Hizmeti</li>
-        <li>Butler</li>
-        <li >Angel(Tatil Asistanı)</li>
-        <li>Turn Down</li>
-        <li>Concierge Hizmeti</li>
-        <li>Özel Kaymaz Fayans Zemin</li>
-        <li>Yastık Menüsü</li>
-        <li>Ses Komutlu Smart Villa</li>
-        <li>Hızlı İnternet</li>
-        <li>Merkezi Sistem Klima</li>
-        <li>Dijital Yayınlar</li>
-        <li>sabit telefon</li>
-       <li> Kurşun Geçirmez Dış Cephe</li>
+        <li>{%translate "1 Adet Göl Kenarı"%}</li>
+        <li>{%translate "Genel Alan 500 m²"%}</li>
+        <li>{%translate "Villa Alan 330 m²"%}</li>
+        <li>{%translate "Bahçe Alan 350 m²"%}</li>
+        <li>{%translate "Özel Yüzme Havuzu 30 m²"%}</li>
+        <li>{%translate "3 Kat"%}</li>
+        <li>{%translate "6+1 (2 Yatak Odası + 1 Salon + 1 çalışma odası)"%}</li>
+        <li>{%translate "Private Island (Özel aşçılı Restoran)"%}</li>
+        <li>{%translate "Robot Hizmeti"%}</li>
+        <li>{%translate "Butler"%}</li>
+        <li >{%translate "Angel(Tatil Asistanı)"%}</li>
+        <li>{%translate "Turn Down"%}</li>
+        <li>{%translate "Concierge Hizmeti"%}</li>
+        <li>{%translate "Özel Kaymaz Fayans Zemin"%}</li>
+        <li>{%translate "Yastık Menüsü"%}</li>
+        <li>{%translate "Ses Komutlu Smart Villa"%}</li>
+        <li>{%translate "Hızlı İnternet"%}</li>
+        <li>{%translate "Merkezi Sistem Klima"%}</li>
+        <li>{%translate "Dijital Yayınlar"%}</li>
+        <li>{%translate "sabit telefon"%}</li>
+        <li>{%translate "Kurşun Geçirmez Dış Cephe"%}</li>
       </ul>
     </div>
     <div class="villa-det-cont">
-      <h4 class="villah4">GİRİŞ KAT</h4>
-      <p class="villa-detp">Salon (oturma grubu, yemek alanı, tam donanımlı Amerikan mutfak -çamaşır makinesi, bulaşık makinesi, ankastre fırın, mikrodalga fırın-, şömine, 70 inç 
-        LED TV, Apple TV, PS5, çekirdek kahve makinesi, maxi bar, Kimbo kahve makinesi, buz makinesi, sehpa, WC)</p>
-      <p class="villa-detp">Yatak odası 42 m² (French ve twin yatak, , 42 inç LED TV, dijital kasa, minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma 
-        makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk terliği, çocuk buklet seti)</p>
-      <p class="villa-detp">Yatak odası 14,5 m² (ara boy yatak, 42 inç LED TV, dijital kasa, minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, 
-        bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk terliği, çocuk buklet seti)</p>
-      <h4 class="villah4">BİRİNCİ KAT</h4>
-      <p class="villa-detp">Yatak odası 42 m² (French yatak, 42 inç LED TV, dijital kasa, minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, 
-        bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk terliği, çocuk buklet seti)</p>
-      <p class="villa-detp">Yatak odası 42 m² (French yatak, 42 inç LED TV, dijital kasa, minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, 
-        bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk terliği, çocuk buklet seti)</p>
-      <p class="villa-detp">Yatak odası 17,5 m² (French ve twin yatak, 42 inç LED TV, dijital kasa, minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma 
-        makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk terliği, çocuk buklet seti)</p>
-      <p class="villa-detp">Çalışma odası 9 m² (çalışma masası ve sandalyesi, kitaplık, oturma grubu)</p>
-        <h4 class="villah4">İKİNCİ KAT</h4>
-      <p class="villa-detp">Roof garden (sauna, spor aletleri, oturma grubu, jakuzi, şezlong, şemsiye)</p>
+      <h4 class="villah4">{%translate "GİRİŞ KAT"%}</h4>
+      <p class="villa-detp">{%translate "Salon (oturma grubu, yemek alanı, tam donanımlı Amerikan mutfak -çamaşır makinesi, bulaşık makinesi, ankastre fırın, mikrodalga fırın-, şömine, 70 inç LED TV, Apple TV, PS5, çekirdek kahve makinesi, maxi bar, Kimbo kahve makinesi, buz makinesi, sehpa, WC)"%}</p>
+      <p class="villa-detp">{%translate "Yatak odası 42 m² (French ve twin yatak, , 42 inç LED TV, dijital kasa, minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk terliği, çocuk buklet seti)"%}</p>
+      <p class="villa-detp">{%translate "Yatak odası 14,5 m² (ara boy yatak, 42 inç LED TV, dijital kasa, minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi,  bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk terliği, çocuk buklet seti)"%}</p>
+      <h4 class="villah4">{%translate "BİRİNCİ KAT"%}</h4>
+      <p class="villa-detp">{%translate "Yatak odası 42 m² (French yatak, 42 inç LED TV, dijital kasa, minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk terliği, çocuk buklet seti)"%}</p>
+      <p class="villa-detp">{%translate "Yatak odası 42 m² (French yatak, 42 inç LED TV, dijital kasa, minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk terliği, çocuk buklet seti)"%}</p>
+      <p class="villa-detp">{%translate "Yatak odası 17,5 m² (French ve twin yatak, 42 inç LED TV, dijital kasa, minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk terliği, çocuk buklet seti)"%}</p>
+      <p class="villa-detp">{%translate "Çalışma odası 9 m² (çalışma masası ve sandalyesi, kitaplık, oturma grubu)"%}</p>
+      <h4 class="villah4">{%translate "İKİNCİ KAT"%}</h4>
+      <p class="villa-detp">{%translate "Roof garden (sauna, spor aletleri, oturma grubu, jakuzi, şezlong, şemsiye)"%}</p>
     </div>
-    <button class="button-33" role="button">REZERVASYON YAP</button>   
+    <button class="button-33" role="button">{%translate "REZERVASYON YAP" %}</button>   
   </section>
 <!--mobile-->
 <section class="odalarh" >
-  <h4 class="odalarh4">DİĞER ODALARI İNCELE</h4>
+  <h4 class="odalarh4">{%translate "DİĞER ODALARI İNCELE" %}</h4>
   
   <div  style="--swiper-navigation-color: #70707000; --swiper-pagination-color: #076984" class="swiper swiper1 mySwiper1">
     
@@ -88,12 +84,12 @@
       <div class="villa-info">
         <p class="villap">{{vla.metr}} ㎡</p>
         <div class="villa-divider"></div>
-        <p class="villap">5 yatak odası  
+        <p class="villap">{{vla.bedrooms}} 
         </p>
         <div class="villa-divider"></div>
-        <p class="villap">Özel yüzme havuzu 24 ㎡</p>
+        <p class="villap">{{vla.info}}</p>
       </div>
-      <a href={{vla.url}}><button class="button-34" >DETAYLI İNCELE</button></a>
+      <button onclick="window.location.href='/{{ LANGUAGE_CODE }}{{vla.url}}'" class="button-34" >{%translate "DETAYLI İNCELE" %}</button> 
     
 
   </div>  
@@ -109,9 +105,8 @@
   {% for inf in villainfo %}
   <div class="villaslide swiper-slide">    
     <h3 class="villa-slideh">{{inf.name}}</h3>
-    <p class="villa-slidep">Çocuklarınızla keyifli, konforlu ve huzurlu bir tatil sunuyoruz. Kendine ait havuzu ve özel  güneşlenme alanıyla kendinizi özel  hissetmenizi sağlayacaktır.
-    </p>
-    <a href={{inf.url}}><button class="button-32" role="button">DETAYLI İNCELE</button> </a>   
+    <p class="villa-slidep">{{inf.page_info}}</p>
+    <button onclick="window.location.href='/{{ LANGUAGE_CODE }}{{inf.url}}'" class="button-34" >{%translate "DETAYLI İNCELE" %}</button>   
   </div> 
   {% endfor %}
   </div>
@@ -124,7 +119,7 @@
 
   <div class="villa-slide-right swiper-wrapper">
     {% for inf in villainfo %}
-    <div class=" swiper-slide"><a href={{inf.url}}> <img class="villa-slide-img" src={{inf.inpageimg.url}}></a></div>
+    <div class=" swiper-slide"><a href=/{{ LANGUAGE_CODE }}{{inf.url}}> <img class="villa-slide-img" src={{inf.inpageimg.url}}></a></div>
     {% endfor %}
   </div>
 </div>

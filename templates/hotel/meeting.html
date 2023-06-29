@@ -2,6 +2,7 @@
 {% load static %}
 {% block title %}Club Arona{% endblock %}
 {% block content %}
+{% load i18n %}
 
 <div style="--swiper-navigation-color: #70707000;--swiper-pagination-color: #f7f7f7" class="swiper mySwiper5">
     <div class="swiper-wrapper" >
@@ -14,21 +15,20 @@
     <div class="swiper-pagination swiper-pagination5"></div>
   </div>
   <section class="act-info-cont">
-    <h3 class="acth">Meeting</h3>
-    <p class="actp">Lorem ipsum dolor sit amet. In illo dolorem aut quaerat aspernatur qui reiciendis consequatur. Est labore consequatur est voluptatibus nihil qui quos dolores ab Quis magni ut aliquid accusantium.
-    </p>
-    <p class="actp">33 aliquid iusto ad laborum asperiores et velit quisquam ut laborum architecto qui reiciendis voluptates a rerum praesentium! Rem mollitia neque et rerum alias est excepturi molestiae in quia voluptas. 
+    <h3 class="acth">{%translate "Meeting"%}</h3>
+    <p class="actp">{%translate "Seçkin toplantı, eğitim ve workshop gibi organizasyonlarınızda donanımlı alt yapısı ve şık davet hizmetleriyle Club Arona Villas, markanızın prestijini artıracak etkinliklere ev sahipliği yapmaktadır. Konferans ve çok amaçlı 4 adet salonu bulunan Club Arona Villas’ta siz de üst düzey organizasyonlarınız için MICE hizmetlerine başvurabilirsiniz."%}
     </p>
      </section>
-<div class= "navdown" >
-    <ul class="downul mx-auto" id="navdown">
-        <li class="downi"> <a class="down-link genel active" itemNo="1" href="javascript:;">GENEL </a></li>
-        <li class="downi"> <a class="down-link" itemNo="2" href="javascript:;">HAVUZ </a></li>
-        <li class="downi"> <a class="down-link " itemNo="3" href="javascript:;">VİLLA</a></li>
-        <li class="downi"> <a class="down-link " itemNo="4"  href="javascript:;">AKTİVİTE </a></li>
-        <li class="downi"> <a class="down-link " itemNo="5"  href="javascript:;">RESTORAN </a></li>
-        <li class="downi"> <a class="down-link " itemNo="6"   href="javascript:;">SPA</a></li>    
-    </ul>  
+     <div class= "navdown scroll-reveal" >
+      <ul class="downul mx-auto" id="navdown">
+          <li class="downi"> <a class="down-link genel active" itemNo="1" href="javascript:;">{%translate "GENEL"%} </a></li>
+          <li class="downi"> <a class="down-link" itemNo="2" href="javascript:;">{%translate "HAVUZ"%} </a></li>
+          <li class="downi"> <a class="down-link " itemNo="3" href="javascript:;">{%translate "VİLLA"%}</a></li>
+          <li class="downi"> <a class="down-link " itemNo="4"  href="javascript:;">{%translate "AKTİVİTE"%} </a></li>
+          <li class="downi"> <a class="down-link " itemNo="5"  href="javascript:;">{%translate "RESTORAN "%}</a></li>
+          <li class="downi"> <a class="down-link " itemNo="6"   href="javascript:;">{%translate "SPA"%}</a></li>    
+      </ul>  
+</div>
 </div>
 <div class="downswiper-cont" id="gal">
 

@@ -1,10 +1,14 @@
 from django.shortcuts import render
-from . models import Villa, Genel, Havuz,Galleryvilla, Aktivite, Restoran, Spa, Food, Meeting
+from . models import Villa, Genel, Havuz,Galleryvilla, Aktivite, Restoran, Spa, Food, Meeting, mainslide
+from django.utils.translation import gettext as _
+from django.utils.translation import get_language, activate, gettext
  
 
 
 
 def home(request):
+    slider = mainslide.objects.all()
+    trans = translate(language='en')
     villas = Villa.objects.all()
     genels = Genel.objects.all()
     havuzs = Havuz.objects.all()
@@ -13,14 +17,22 @@ def home(request):
     restorans = Restoran.objects.all()
     spas = Spa.objects.all()
     foods = Food.objects.all()
-    return render(request, 'hotel/home.html', {"villas":villas, "genels":genels, "havuzs":havuzs, "galleryvs":galleryvs, "aktivites":aktivites, "restorans":restorans, "spas":spas, "foods":foods })
-
+    return render(request, 'hotel/home.html', {"villas":villas, "genels":genels, "havuzs":havuzs, "galleryvs":galleryvs, "aktivites":aktivites, "restorans":restorans, "spas":spas, "foods":foods, "trans":trans, "slider": slider })
+def translate(language):
+    cur_language = get_language()
+    try:
+        activate(language)
+        text = gettext ('hello')
+    finally:
+        activate(cur_language)
+    return text
 # Create your views here.
 def lalila(request):
+    trans = translate(language='en')
     villah = Galleryvilla.objects.filter(name ="lalila")
     villainfo = Villa.objects.all()
     villas = Villa.objects.all()
-    return render(request, 'hotel/lalila.html',{"villah":villah, "villainfo": villainfo, "villas":villas})
+    return render(request, 'hotel/lalila.html',{"villah":villah, "villainfo": villainfo, "villas":villas, "trans":trans})
 def amarila(request):
     villah = Galleryvilla.objects.filter(name="amarila")
     villas = Villa.objects.all()

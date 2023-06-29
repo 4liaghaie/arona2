@@ -6,6 +6,7 @@ class Villa(models.Model):
     url = models.CharField(max_length=255, default=None, blank=True, null=True)
     bedrooms = models.CharField(max_length=255)
     info = models.CharField(max_length=255)
+    page_info = models.TextField(null=True)
     image = models.ImageField(upload_to="",  default=None, blank=True, null=True)
     inpageimg = models.ImageField(upload_to="",default=None)
     updated = models.TimeField(auto_now=True)
@@ -15,6 +16,10 @@ class Villa(models.Model):
         if self.image and hasattr(self.image, 'url'):
          return self.image.url
         
+
+class mainslide(models.Model):
+     name = models.CharField(max_length=255)
+     image = models.ImageField(upload_to="",  default=None, blank=True, null=True)   
 
 class Genel(models.Model):
      name = models.CharField(max_length=255)
@@ -51,8 +56,7 @@ class Food(models.Model):
     name = models.CharField(max_length=255)
     hours = models.CharField(max_length=255)
     info = models.CharField(max_length=255)
-    page_info1 = models.TextField(null=True)
-    page_info2 = models.TextField(null=True)
+    page_info = models.TextField(null=True)
     image = models.ImageField(upload_to="",  default=None, blank=True, null=True)
     updated = models.TimeField(auto_now=True)
     created = models.TimeField(auto_now_add=True)

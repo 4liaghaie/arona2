@@ -1,0 +1,677 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-29 13:40+0200\n"
+"PO-Revision-Date: 2023-06-29 13:26-0500\n"
+"Last-Translator:   <4liaghaie@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\hotel\views.py:25
+msgid "hello"
+msgstr "merhaba"
+
+#: .\templates\hotel\activity.html:18
+#, fuzzy
+#| msgid "AKTİVİTE"
+msgid "AKTİVİTELER"
+msgstr "ACTIVITY"
+
+#: .\templates\hotel\activity.html:19
+msgid ""
+"Eğlence, macera, keşif, tutku ve rekabet bir arada… Club Arona Villas, size "
+"benzersiz aktivite seçenekleriyle tatil anılarınızda pencereler açmak için "
+"hazır."
+msgstr ""
+"Fun, adventure, discovery, passion and competition all come together... Club "
+"Arona Villas is ready to open windows on your holiday memories with its "
+"unique activity options."
+
+#: .\templates\hotel\activity.html:21
+msgid ""
+"Çok özel bir yapıda, doğayla temas etmenizi, gerçek bir rahatlık ve "
+"yenilenme hissiyle tanışmanızı sağlayacak ekolojik havuzda, havuz keyfi "
+"bambaşka bir seviyeye çıkıyor."
+msgstr ""
+"Enjoying the waters takes you to a whole new level in the ecological pool "
+"that will allow you to come in contact with nature and meet with a feeling "
+"of real comfort and renewal in a very special structure."
+
+#: .\templates\hotel\activity.html:24
+msgid ""
+"Tesiste helikopter ile özel turlar, yat turu, supercar, motorsiklet, "
+"bisiklet, golf, aquatic gym, tenis, basketbol, fitness, oyun merkezi, canlı "
+"müzik, mini club gibi hizmetler de herkesin tatilden beklentilerini "
+"karşılayacak ve mutlu tatil anıları kazanmasını sağlayacak imkanlar tanıyor."
+msgstr ""
+"Services such as private helicopter tours, yacht tours, supercars, "
+"motorcycles, bicycles, golf, aquatic gym, tennis, basketball, fitness, game "
+"center, live music, mini club at the facility provide opportunities to meet "
+"everyone's expectations from their holiday and to gain happy holiday "
+"memories."
+
+#: .\templates\hotel\activity.html:29 .\templates\hotel\home.html:155
+#: .\templates\hotel\meeting.html:24 .\templates\hotel\spa.html:26
+msgid "GENEL"
+msgstr "GENERAL"
+
+#: .\templates\hotel\activity.html:30 .\templates\hotel\home.html:156
+#: .\templates\hotel\meeting.html:25 .\templates\hotel\spa.html:27
+msgid "HAVUZ"
+msgstr "POOLS"
+
+#: .\templates\hotel\activity.html:31 .\templates\hotel\home.html:157
+#: .\templates\hotel\meeting.html:26 .\templates\hotel\spa.html:28
+msgid "VİLLA"
+msgstr "VILLAS"
+
+#: .\templates\hotel\activity.html:32 .\templates\hotel\base.html:77
+#: .\templates\hotel\home.html:158 .\templates\hotel\meeting.html:27
+#: .\templates\hotel\spa.html:29
+msgid "AKTİVİTE"
+msgstr "ACTIVITY"
+
+#: .\templates\hotel\activity.html:33 .\templates\hotel\home.html:159
+#: .\templates\hotel\meeting.html:28 .\templates\hotel\spa.html:30
+msgid "RESTORAN "
+msgstr "RESTURANTS"
+
+#: .\templates\hotel\activity.html:34 .\templates\hotel\base.html:76
+#: .\templates\hotel\base.html:111 .\templates\hotel\home.html:160
+#: .\templates\hotel\meeting.html:29 .\templates\hotel\spa.html:31
+msgid "SPA"
+msgstr "SPA"
+
+#: .\templates\hotel\amarila.html:34
+msgid "16 Adet Botanik ve Göl Manzaralı Villa"
+msgstr "16 Villas with Botanic and Lake View"
+
+#: .\templates\hotel\amarila.html:35 .\templates\hotel\palaya.html:35
+msgid "Genel Alan 350 m²"
+msgstr "General Area 350 m² "
+
+#: .\templates\hotel\amarila.html:36 .\templates\hotel\lalila.html:36
+#: .\templates\hotel\palaya.html:36
+msgid "Villa Alan 180 m²"
+msgstr "Villa Area 180 m² "
+
+#: .\templates\hotel\amarila.html:37 .\templates\hotel\palaya.html:37
+msgid "Bahçe Alan 290 m²"
+msgstr "Garden Area 290 m² "
+
+#: .\templates\hotel\amarila.html:38 .\templates\hotel\lalila.html:38
+msgid "Özel Yüzme Havuzu 24 m²"
+msgstr "Private Swimming Pool 24 m²"
+
+#: .\templates\hotel\amarila.html:39 .\templates\hotel\lalila.html:39
+#: .\templates\hotel\larensignature.html:39 .\templates\hotel\palaya.html:39
+#: .\templates\hotel\thegrand.html:39
+msgid "3 Kat"
+msgstr "3 Floors"
+
+#: .\templates\hotel\amarila.html:40 .\templates\hotel\palaya.html:40
+msgid "3+1 (3 Yatak Odası + 1 Salon)"
+msgstr "3+1 (3 Bedrooms + 1 Living Room) "
+
+#: .\templates\hotel\amarila.html:41 .\templates\hotel\lalila.html:41
+#: .\templates\hotel\larensignature.html:43 .\templates\hotel\palaya.html:42
+#: .\templates\hotel\thegrand.html:43
+msgid "Butler"
+msgstr "Butler"
+
+#: .\templates\hotel\amarila.html:42 .\templates\hotel\lalila.html:42
+#: .\templates\hotel\larensignature.html:44 .\templates\hotel\palaya.html:43
+#: .\templates\hotel\thegrand.html:44
+msgid "Angel(Tatil Asistanı)"
+msgstr "Angel (Vacation Assistant) "
+
+#: .\templates\hotel\amarila.html:43 .\templates\hotel\lalila.html:43
+#: .\templates\hotel\larensignature.html:45 .\templates\hotel\palaya.html:44
+#: .\templates\hotel\thegrand.html:45
+msgid "Turn Down"
+msgstr "Turn Down"
+
+#: .\templates\hotel\amarila.html:44 .\templates\hotel\lalila.html:44
+#: .\templates\hotel\larensignature.html:46 .\templates\hotel\palaya.html:45
+#: .\templates\hotel\thegrand.html:46
+msgid "Concierge Hizmeti"
+msgstr "Concierge Service"
+
+#: .\templates\hotel\amarila.html:45 .\templates\hotel\lalila.html:45
+#: .\templates\hotel\larensignature.html:47 .\templates\hotel\palaya.html:46
+#: .\templates\hotel\thegrand.html:47
+msgid "Özel Kaymaz Fayans Zemin"
+msgstr "Special Non-slip Tile Floor"
+
+#: .\templates\hotel\amarila.html:46 .\templates\hotel\lalila.html:46
+#: .\templates\hotel\larensignature.html:48 .\templates\hotel\palaya.html:47
+#: .\templates\hotel\thegrand.html:48
+msgid "Yastık Menüsü"
+msgstr "Pillow Menu "
+
+#: .\templates\hotel\amarila.html:47 .\templates\hotel\lalila.html:47
+#: .\templates\hotel\larensignature.html:49 .\templates\hotel\palaya.html:48
+#: .\templates\hotel\thegrand.html:49
+msgid "Ses Komutlu Smart Villa"
+msgstr "Smart Villa with Voice Command "
+
+#: .\templates\hotel\amarila.html:48 .\templates\hotel\lalila.html:48
+#: .\templates\hotel\larensignature.html:50 .\templates\hotel\palaya.html:49
+#: .\templates\hotel\thegrand.html:50
+msgid "Hızlı İnternet"
+msgstr "Fast Internet "
+
+#: .\templates\hotel\amarila.html:49 .\templates\hotel\lalila.html:49
+#: .\templates\hotel\larensignature.html:51 .\templates\hotel\palaya.html:50
+#: .\templates\hotel\thegrand.html:51
+msgid "Merkezi Sistem Klima"
+msgstr "Central System Air Conditioner"
+
+#: .\templates\hotel\amarila.html:50 .\templates\hotel\lalila.html:50
+#: .\templates\hotel\larensignature.html:52 .\templates\hotel\palaya.html:51
+#: .\templates\hotel\thegrand.html:52
+msgid "Dijital Yayınlar"
+msgstr "Digital Publications"
+
+#: .\templates\hotel\amarila.html:51 .\templates\hotel\lalila.html:51
+#: .\templates\hotel\larensignature.html:53 .\templates\hotel\palaya.html:52
+#: .\templates\hotel\thegrand.html:53
+msgid "sabit telefon"
+msgstr "Fixed Line"
+
+#: .\templates\hotel\amarila.html:55 .\templates\hotel\lalila.html:55
+#: .\templates\hotel\larensignature.html:58 .\templates\hotel\palaya.html:56
+#: .\templates\hotel\thegrand.html:57
+msgid "GİRİŞ KAT"
+msgstr "GROUND FLOOR"
+
+#: .\templates\hotel\amarila.html:56 .\templates\hotel\palaya.html:57
+msgid ""
+"Salon (oturma grubu, yemek alanı, Amerikan bar, şömine, 70 inç LED TV, Apple "
+"TV, PS5, maxi bar, Kimbo kahve makinesi, buz makinesi, sehpa, banyo)"
+msgstr ""
+"Living Room (Seating group, dining area, American bar, fireplace, 70-inch "
+"LED TV, Apple TV, PS5, maxi bar, Kimbo coffee machine, ice machine, coffee \n"
+"table, bathroom)"
+
+#: .\templates\hotel\amarila.html:57
+msgid ""
+"1Yatak odası 14 m² (French veya twin yatak, 42 inç LED TV, dijital kasa, "
+"minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma "
+"makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk "
+"bornozu, çocuk terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom 14 m² (French or twin beds, 42-inch LED TV, digital safe, minibar, "
+"tea/coffee setup, reading lamp, en-suite bathroom, bathtub, hair dryer, \n"
+"bathrobe, slippers, premium boucle, children's bathrobe, children's "
+"slippers, children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\amarila.html:58
+msgid "Bahçe Alanı (oturma grubu, şezlong, şemsiye):"
+msgstr "Garden Area (seating group, sunbed, umbrella)"
+
+#: .\templates\hotel\amarila.html:59 .\templates\hotel\lalila.html:57
+#: .\templates\hotel\larensignature.html:62 .\templates\hotel\palaya.html:60
+#: .\templates\hotel\thegrand.html:61
+msgid "BİRİNCİ KAT"
+msgstr "FIRST FLOOR"
+
+#: .\templates\hotel\amarila.html:60 .\templates\hotel\palaya.html:61
+msgid ""
+"Yatak odası 34 m² (French yatak, 42 inç LED TV, dijital kasa, minibar, çay/"
+"kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, "
+"bornoz terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk "
+"terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom 34 m² (French bed, 42-inch LED TV, digital safe, minibar, tea/coffee setup, reading lamp, en-suite bathroom, bathtub, hair dryer, bathrobe, "
+"slippers, premium boucle, children's bathrobe, children's slippers, children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\amarila.html:61 .\templates\hotel\lalila.html:59
+#: .\templates\hotel\palaya.html:62
+msgid ""
+"Yatak odası 20 m² (French veya twin yatak, 42 inç LED TV, dijital kasa, "
+"minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma "
+"makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk "
+"bornozu, çocuk terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom, 20 m² (French or twin beds, 42-inch LED TV, digital safe, minibar, "
+"tea/coffee setup, reading lamp, en-suite bathroom, bathtub, hair dryer, \n"
+"bathrobe, slippers, premium boucle, children's bathrobe, children's "
+"slippers, children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\amarila.html:62 .\templates\hotel\lalila.html:60
+#: .\templates\hotel\larensignature.html:67 .\templates\hotel\palaya.html:63
+#: .\templates\hotel\thegrand.html:67
+msgid "İKİNCİ KAT"
+msgstr "SECOND FLOOR"
+
+#: .\templates\hotel\amarila.html:63 .\templates\hotel\lalila.html:61
+#: .\templates\hotel\palaya.html:64
+msgid "Roof garden (oturma grubu, sehpa, jakuzi, şezlong, şemsiye)"
+msgstr "Roof garden (seating group, coffee table, Jacuzzi, sunbed, umbrella)"
+
+#: .\templates\hotel\amarila.html:65 .\templates\hotel\lalila.html:63
+#: .\templates\hotel\larensignature.html:70 .\templates\hotel\palaya.html:66
+#: .\templates\hotel\thegrand.html:70
+msgid "REZERVASYON YAP"
+msgstr "RESERVATION"
+
+#: .\templates\hotel\amarila.html:69 .\templates\hotel\lalila.html:67
+#: .\templates\hotel\larensignature.html:74 .\templates\hotel\palaya.html:70
+#: .\templates\hotel\thegrand.html:74
+msgid "DİĞER ODALARI İNCELE"
+msgstr "OTHER VILLA INFO"
+
+#: .\templates\hotel\amarila.html:87 .\templates\hotel\amarila.html:104
+#: .\templates\hotel\home.html:78 .\templates\hotel\home.html:95
+#: .\templates\hotel\lalila.html:85 .\templates\hotel\lalila.html:102
+#: .\templates\hotel\larensignature.html:92
+#: .\templates\hotel\larensignature.html:109 .\templates\hotel\palaya.html:88
+#: .\templates\hotel\palaya.html:105 .\templates\hotel\thegrand.html:92
+#: .\templates\hotel\thegrand.html:109
+msgid "DETAYLI İNCELE"
+msgstr "CHECK IT OUT"
+
+#: .\templates\hotel\base.html:53
+msgid "Giriş Tarihi"
+msgstr "Check in"
+
+#: .\templates\hotel\base.html:56
+msgid "Çıkış Tarihi"
+msgstr "Check out"
+
+#: .\templates\hotel\base.html:60
+msgid "Kişi Sayısı"
+msgstr "Adult"
+
+#: .\templates\hotel\base.html:64
+msgid "Çocuk Sayısı"
+msgstr "Child"
+
+#: .\templates\hotel\base.html:68
+msgid " REZERVASYON YAP "
+msgstr "RESERVE"
+
+#: .\templates\hotel\base.html:73
+msgid " GENEL"
+msgstr "GENERAL"
+
+#: .\templates\hotel\base.html:74
+msgid " VİLLALAR"
+msgstr "VILLAS"
+
+#: .\templates\hotel\base.html:75 .\templates\hotel\base.html:103
+msgid "GURME"
+msgstr "FOOD"
+
+#: .\templates\hotel\base.html:101 .\templates\hotel\home.html:49
+msgid "HAKKIMIZDA"
+msgstr "ABOUT US"
+
+#: .\templates\hotel\base.html:102
+msgid "VİLLALAR"
+msgstr "VILLAS"
+
+#: .\templates\hotel\base.html:112
+msgid "GALERİ"
+msgstr "GALLERY"
+
+#: .\templates\hotel\base.html:113
+msgid "İLETİŞİM"
+msgstr "CONTACT"
+
+#: .\templates\hotel\base.html:114
+msgid "RESERVASYON"
+msgstr "RESERVATION"
+
+#: .\templates\hotel\base.html:118 .\templates\hotel\base.html:137
+msgid "TR"
+msgstr "EN"
+
+#: .\templates\hotel\base.html:181
+msgid "Hakkımızda"
+msgstr "About Us"
+
+#: .\templates\hotel\base.html:182
+msgid "Odalar"
+msgstr "Rooms"
+
+#: .\templates\hotel\base.html:183
+msgid "Gurme"
+msgstr "Food"
+
+#: .\templates\hotel\base.html:184
+msgid "Spa"
+msgstr "Spa"
+
+#: .\templates\hotel\base.html:185
+msgid "Galeri"
+msgstr "Gallery"
+
+#: .\templates\hotel\base.html:186
+msgid "İletişim"
+msgstr "Contact"
+
+#: .\templates\hotel\base.html:197 .\templates\hotel\base.html:213
+msgid "E- KATALOG"
+msgstr "DOWNLOAD "
+
+#: .\templates\hotel\base.html:197 .\templates\hotel\base.html:213
+msgid " DOSYASI İNDİR"
+msgstr "FACTSHEET"
+
+#: .\templates\hotel\base.html:214
+msgid "Gizlilik İlkeleri     Kurallar ve Yönetmelikler     K.V.KK "
+msgstr ""
+"Privacy Policies   Rules and Regulations    Personal Data Protection Law"
+
+#: .\templates\hotel\food.html:17
+msgid "MENÜLERİ İNCELE"
+msgstr "MENU DETAILS"
+
+#: .\templates\hotel\home.html:50
+msgid ""
+"Club Arona Villas & Wellness, sıra dışı tatil deneyimleri yaşamanız ve yeni "
+"çağın modern, ayrıcalıklı tatillerinde yerinizi almanız için sizi bekliyor. "
+"Üst düzey konseptiyle benzersiz konaklama, lezzet, eğlence ve keyif "
+"tatilleri vadeden Club Arona Villas, değerli misafirlerinin unutulmaz anlar "
+"ve benzersiz anılar biriktirmesini sağlar. Size özel bir tatil planı için "
+"siz de Club Arona Villas tatillerinde yerinizi alın."
+msgstr ""
+"Club Arona Villas & Wellness is waiting for you to experience extraordinary "
+"holiday experiences and take your place in the modern and privileged "
+"holidays of the new age. Promising unique accommodation, taste, "
+"entertainment and pleasure holidays with its high-end concept, Club Arona "
+"Villas allows its valued guests to save unforgettable moments and unique "
+"memories. Take your place in Club Arona Villas holidays for a special "
+"holiday plan for you. "
+
+#: .\templates\hotel\home.html:59
+msgid "ODALAR"
+msgstr "ROOMS"
+
+#: .\templates\hotel\home.html:137
+msgid "KONSEPTİMİZ"
+msgstr "CONCEPT"
+
+#: .\templates\hotel\home.html:140
+msgid "Konsept"
+msgstr "CONCEPT"
+
+#: .\templates\hotel\home.html:141
+msgid ""
+"Tatil beklentilerinde sınırların olmadığını gösteren ve sizi hayallerinizin "
+"ötesinde deneyimlere taşıyacak olan Club Arona Villas, ultra lüks "
+"hizmetleri, konfor ve şıklığın benzersiz bileşimi olan konsepti ve her "
+"anınızı ayrıcalıklı kılacak tesis özellikleriyle sizleri ağırlıyor. Siz de "
+"tatilde lüks tutkunuzu bambaşka bir seviyede gerçeğe dönüştürmek için "
+"deneyimlerinizi artırın. Club Arona Villas’ın sunduğu seçkin hizmetleri "
+"keşfetmeye başlayın."
+msgstr ""
+"Club Arona Villas, which will show that there are no limits in holiday "
+"expectations and will carry you to experiences beyond your dreams, welcomes "
+"you with its ultra-luxury services, a concept that is a unique combination "
+"of comfort and elegance, and facility features that will make your every "
+"moment privileged. Increase your experience to turn your passion for luxury "
+"on holiday into reality on a whole new level. Start exploring the exclusive "
+"services offered by Club Arona Villas. "
+
+#: .\templates\hotel\home.html:142
+msgid "Club Arona Villas’ın sunduğu seçkin hizmetleri keşfetmeye başlayın."
+msgstr "Start exploring the exclusive services offered by Club Arona Villas."
+
+#: .\templates\hotel\lalila.html:34
+msgid "6 Adet Botanik ve Göl Manzaralı Villa"
+msgstr "6 Villas with Botanic and Lake View "
+
+#: .\templates\hotel\lalila.html:35
+msgid "Genel Alan 260 m²"
+msgstr "General Area 260 m² "
+
+#: .\templates\hotel\lalila.html:37
+msgid "Bahçe Alan 200 m²"
+msgstr "Garden Area 200 m² "
+
+#: .\templates\hotel\lalila.html:40
+msgid "2+1 (2 Yatak Odası + 1 Salon)"
+msgstr "2+1 (2 Bedrooms + 1 Living room) "
+
+#: .\templates\hotel\lalila.html:56
+msgid ""
+"Salon (Oturma grubu, yemek alanı, Amerikan bar, şömine, 70 inç LED TV, Apple "
+"TV, PS5, maxi bar, Nesspresso kapsül kahve makinesi, buz makinesi,sehpa, WC)"
+msgstr ""
+"Living Room (Seating group, dining area, American bar, fireplace, 70-inch "
+"LED TV, Apple TV, PS5, maxi bar, Kimbo coffee machine, ice machine, coffee "
+"table, \n"
+"WC) Garden Area (seating group, sunbed, umbrella) "
+
+#: .\templates\hotel\lalila.html:58
+msgid ""
+"Yatak odası 34 m² (French yatak, 42 inç LED TV, dijital kasa, minibar, çay/"
+"kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, "
+"bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk "
+"terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom, 34 m² (French bed, 42-inch LED TV, digital safe, minibar, tea/"
+"coffee setup, reading lamp, en-suite bathroom, bathtub, hair dryer, "
+"bathrobe, \n"
+"slippers, premium boucle, children's bathrobe, children's slippers, "
+"children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\larensignature.html:34 .\templates\hotel\thegrand.html:34
+msgid "1 Adet Göl Kenarı"
+msgstr "1 Lakeside "
+
+#: .\templates\hotel\larensignature.html:35 .\templates\hotel\thegrand.html:35
+msgid "Genel Alan 500 m²"
+msgstr "General Area 500 m²"
+
+#: .\templates\hotel\larensignature.html:36 .\templates\hotel\thegrand.html:36
+msgid "Villa Alan 330 m²"
+msgstr "Villa Area 330 m²"
+
+#: .\templates\hotel\larensignature.html:37 .\templates\hotel\thegrand.html:37
+msgid "Bahçe Alan 350 m²"
+msgstr "Garden Area 350 m²"
+
+#: .\templates\hotel\larensignature.html:38 .\templates\hotel\thegrand.html:38
+msgid "Özel Yüzme Havuzu 30 m²"
+msgstr "Private Heated Swimming Pool 30m²"
+
+#: .\templates\hotel\larensignature.html:40 .\templates\hotel\thegrand.html:40
+msgid "6+1 (2 Yatak Odası + 1 Salon + 1 çalışma odası)"
+msgstr "6+1 (5 bedrooms + 1 study room+1 living room)"
+
+#: .\templates\hotel\larensignature.html:41 .\templates\hotel\thegrand.html:41
+msgid "Private Island (Özel aşçılı Restoran)"
+msgstr "Private Island (Restr. with special chef) "
+
+#: .\templates\hotel\larensignature.html:42 .\templates\hotel\palaya.html:41
+#: .\templates\hotel\thegrand.html:42
+msgid "Robot Hizmeti"
+msgstr "Robot Service"
+
+#: .\templates\hotel\larensignature.html:54
+msgid "Kurşun Geçirmez Dış Cephe"
+msgstr "Bulletproof Exterior Facade"
+
+#: .\templates\hotel\larensignature.html:59
+msgid ""
+"Salon (oturma grubu, yemek alanı, tam donanımlı Amerikan mutfak -çamaşır "
+"makinesi, bulaşık makinesi, ankastre fırın, mikrodalga fırın-, şömine, 70 "
+"inç LED TV, Apple TV, PS5, çekirdek kahve makinesi, maxi bar, Kimbo kahve "
+"makinesi, buz makinesi, sehpa, WC)"
+msgstr ""
+"Living Room (Seating group, dining area, fully equipped American kitchen - "
+"washing machine, dishwasher, built-in oven, microwave oven-, fireplace, 70- "
+"inch LED TV, Apple TV, PS5,bean to cup coffee machine, maxi bar, Kimbo "
+"coffee machine, ice machine, coffee table, WC) "
+
+#: .\templates\hotel\larensignature.html:60
+msgid ""
+"Yatak odası 42 m² (French ve twin yatak, , 42 inç LED TV, dijital kasa, "
+"minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma "
+"makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk "
+"bornozu, çocuk terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom, 42 m² (French and twin beds, 42-inch LED TV, digital safe, minibar, "
+"tea/coffee setup, reading lamp, en-suite bathroom, bathtub, hair dryer, "
+"bathrobe, slippers, premium boucle, children's bathrobe, children's "
+"slippers, children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\larensignature.html:61
+msgid ""
+"Yatak odası 14,5 m² (ara boy yatak, 42 inç LED TV, dijital kasa, minibar, "
+"çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi,  "
+"bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk "
+"terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom, 14,5 m² (mid-sized bed, 42-inch LED TV, digital safe, minibar, tea/coffee "
+"setup, reading lamp, en-suite bathroom, bathtub, hair dryer, bathrobe, "
+"slippers, premium boucle, children's bathrobe, children's slippers, "
+"children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\larensignature.html:63
+#: .\templates\hotel\larensignature.html:64 .\templates\hotel\thegrand.html:62
+msgid ""
+"Yatak odası 42 m² (French yatak, 42 inç LED TV, dijital kasa, minibar, çay/"
+"kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, "
+"bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk "
+"terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom, 42 m² (French bed, 42-inch LED TV, digital safe, minibar, tea/coffee setup, "
+"reading lamp, en-suite bathroom, bathtub, hair dryer, bathrobe,slippers, premium boucle, "
+"children's bathrobe, children's slippers, children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\larensignature.html:65 .\templates\hotel\thegrand.html:64
+msgid ""
+"Yatak odası 17,5 m² (French ve twin yatak, 42 inç LED TV, dijital kasa, "
+"minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma "
+"makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk "
+"bornozu, çocuk terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom, 17,5 m² (French and twin beds, 42-inch LED TV, digital safe, minibar, "
+"tea/coffee setup, reading lamp, en-suite bathroom, bathtub, hair dryer, "
+"batshrobe, slippers, premium boucle, children's bathrobe, children's slippers,"
+"children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\larensignature.html:66 .\templates\hotel\thegrand.html:65
+msgid ""
+"Çalışma odası 9 m² (çalışma masası ve sandalyesi, kitaplık, oturma grubu)"
+msgstr "Study room, 9 m² (study table and chair, bookcase, seating group) "
+
+#: .\templates\hotel\larensignature.html:68 .\templates\hotel\thegrand.html:68
+msgid ""
+"Roof garden (sauna, spor aletleri, oturma grubu, jakuzi, şezlong, şemsiye)"
+msgstr ""
+"Roof garden (sauna, sports equipment, seating group, Jacuzzi, sunbed, "
+"umbrella) "
+
+#: .\templates\hotel\meeting.html:18
+msgid "Meeting"
+msgstr "Meeting"
+
+#: .\templates\hotel\meeting.html:19
+msgid ""
+"Seçkin toplantı, eğitim ve workshop gibi organizasyonlarınızda donanımlı alt "
+"yapısı ve şık davet hizmetleriyle Club Arona Villas, markanızın prestijini "
+"artıracak etkinliklere ev sahipliği yapmaktadır. Konferans ve çok amaçlı 4 "
+"adet salonu bulunan Club Arona Villas’ta siz de üst düzey "
+"organizasyonlarınız için MICE hizmetlerine başvurabilirsiniz."
+msgstr ""
+"Club Arona Villas hosts events that will increase the prestige of your brand "
+"with its well equipped infrastructure and elegant invitation services in "
+"your organizations such as distinguished meetings, training and workshops. "
+"You can also apply for MICE services for your high-level organizations at "
+"Club Arona Villas, which has 4 conference and multi-purpose halls. "
+
+#: .\templates\hotel\palaya.html:34
+msgid "8 Adet Göl Kenarı"
+msgstr "8 Lakeside"
+
+#: .\templates\hotel\palaya.html:38
+msgid "Özel Isıtmalı Yüzme Havuzu 24 m²"
+msgstr "Private Heated Swimming Pool 24 m²"
+
+#: .\templates\hotel\palaya.html:58
+msgid ""
+"Yatak odası 14 m² (French veya twin yatak, 42 inç LED TV, dijital kasa, "
+"minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma "
+"makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk "
+"bornozu, çocuk terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom 14 m² (French or twin beds, 42-inch LED TV, digital safe, minibar, "
+"tea/coffee setup, reading lamp, en-suite bathroom, bathtub, hair dryer, "
+"bathrobe, slippers, premium boucle, children's bathrobe, children's slippers, "
+"children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\palaya.html:59
+msgid "Bahçe Alanı (oturma grubu, şezlong, şemsiye)"
+msgstr "Garden Area (seating group, sunbed, umbrella) "
+
+#: .\templates\hotel\spa.html:19
+msgid ""
+"Rahatlatıcı ve kendinizi yenilemenizi sağlayacak profesyonel uygulamalar "
+"için SPA merkezi hizmetinizde olacak. VIP hizmetlerle donatılmış çok özel "
+"sauna, hamam, buhar odası, masaj, wellness, tepidarium, rhassoul terapisi ve "
+"apparat kosmetoloji gibi alternatiflerle kendinizi her zamankinden daha iyi "
+"hissedeceksiniz."
+msgstr ""
+"The SPA center will be at your service for professional treatments that will "
+"help you relax and renew yourself. You will feel better than ever with "
+"alternatives such as very special sauna, Turkish bath, steam room, massage, "
+"wellness, tepidarium, rhassoul therapy and apparat cosmetology equipped with "
+"VIP services."
+
+#: .\templates\hotel\thegrand.html:58
+msgid ""
+"Salon (oturma grubu, yemek alanı, tam donanımlı Amerikan mutfak -çamaşır "
+"makinesi, bulaşık makinesi, ankastre fırın, mikrodalga fırın, şömine, 70 inç "
+"LED TV, Apple TV, PS5, çekirdek kahve makinesi, maxi bar, Kimbo kahve "
+"makinesi, buz makinesi, sehpa, WC)"
+msgstr ""
+"Living Room (Seating group, dining area, fully equipped American kitchen - washing machine, dishwasher, built-in oven, microwave oven-, fireplace, 70- "
+"inch LED TV, Apple TV, PS5, bean to cup coffee machine, maxi bar, Kimbo coffee machine, ice machine, coffee table, WC) "
+
+#: .\templates\hotel\thegrand.html:59
+msgid ""
+"Yatak odası 42 m² (French ve twin yatak, , 42 inç LED TV, dijital kasa, "
+"minibar, çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma  "
+"makinesi, bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk "
+"bornozu, çocuk terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom 42 m² (French and twin beds, 42-inch LED TV, digital safe, minibar, tea/coffee setup, reading lamp, en-suite bathroom, bathtub, hair dryer, "
+"bathrobe, slippers, premium boucle, children's bathrobe, children's slippers, children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\thegrand.html:60
+msgid ""
+"Yatak odası 14,5 m² (ara boy yatak, 42 inç LED TV, dijital kasa, minibar, "
+"çay/kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi, "
+"bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk "
+"terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom, 14,5 m² (mid-sized bed, 42-inch LED TV, digital safe, minibar, tea/coffee setup, reading lamp, en-suite bathroom, bathtub, hair dryer, bathrobe, "
+"slippers, premium boucle, children's bathrobe, children's slippers, children's boucle set according to the child's age group) "
+
+#: .\templates\hotel\thegrand.html:63
+msgid ""
+"Yatak odası 42 m² (French yatak, , 42 inç LED TV, dijital kasa, minibar, çay/"
+"kahve setup, okuma lambası, ebeveyn banyo, küvet, saç kurutma makinesi,  "
+"bornoz, terlik, premium buklet, çocuk yaş gurubuna göre çocuk bornozu, çocuk "
+"terliği, çocuk buklet seti)"
+msgstr ""
+"Bedroom, 42 m² (French bed, 42-inch LED TV, digital safe, minibar, tea/coffee setup, reading lamp, en-suite bathroom, bathtub, hair dryer, bathrobe, "
+"slippers, premium boucle, children's bathrobe, children's slippers, children's boucle set according to the child's age group) "

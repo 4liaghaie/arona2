@@ -10,7 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
-from pathlib import Path
+from pathlib import Path 
+import os
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -32,18 +33,26 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+   
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hotel',
+    'modeltranslation',
+    'django.contrib.admin',
+    'rosetta'
+    
+    
+    
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'hotel.middleware.middware.ForceDefaultLanguageMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -105,13 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -132,9 +135,19 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-ADMIN_REORDER = (
-    # First group
-    {'app': 'Hotel', 'label': 'gallery',
-     'models': ('Havuz',
-                'Genel',)
-    },)
+
+
+LANGUAGE_CODE = 'tr'
+
+USE_L10N = True
+USE_I18N = True
+
+USE_TZ = True
+
+LANGUAGES=(
+    ('tr', ('Turkish')),
+    ('en', ('English')),
+)
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale/'),
+)
